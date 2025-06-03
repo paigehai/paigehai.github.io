@@ -36,7 +36,7 @@ My skills are largely involved with industry-relevant forensic tools such as Aut
 I have also recently moved from Windows to Linux as I wanted to explore a more open-source approach to my workflow. I decided on Linux Mint, due to the ease of implementation!
 
 <div style="text-align: center;">
-  <img src="images/desktop.png" alt="Current Linux Mint Build" style="width: 900px; border-radius: 12px;">
+  <img src="docs/images/desktop.png" alt="Current Linux Mint Build" style="width: 1000px; border-radius: 12px;">
 </div>
 
 I am an **Associate Teaching Fellow with Deakin University** as I have a passion for assisting other students and sharing knowledge. As a result, I have created many videos to guide students through common areas of difficulty.
