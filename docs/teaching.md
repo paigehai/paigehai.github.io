@@ -1,4 +1,4 @@
-In Trimester 1 of 2025, I was afforded the opportunity to work alongside Deakin University as an Associate Teaching Fellow for SIT111: Computer Systems. Part of my teaching includes guiding students, hosting HelpHub sessions, and giving actionable feedback to tasks. Areas covered in this unit include:
+In Trimester 1 of 2025, I was afforded the opportunity to work alongside Deakin University as an **Associate Teaching Fellow for SIT111: Computer Systems**. Part of my role includes guiding students, hosting HelpHub sessions, and giving actionable feedback to tasks. Areas covered in this unit include:
 
 <ul>
   <li><strong>Computer Architecture:</strong> boolean algebra, logic gates, and binary number representation, memory, file systems</li>

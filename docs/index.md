@@ -6,7 +6,7 @@ I am currently studying a Bachelor of Cyber Security from Deakin University in M
 ---
 
 #### A Work in Progress
-My studies have been highlighted by many key accomplishments, such as my mathematic paper written on the RSA encryption algorithm (SIT192), my machine learning exploration (SIT384), and my forensic plugin tool (SIT282). You can find out more about my specific academic achievements in my Achievements section. I am currently focusing on exploring more practical applications of cyber security alongside my studies, including switching to Linux to begin development on my "Vulnerability Lab", where I explore different exploits, subsequently writing reports on my findings.
+My studies have been highlighted by many key accomplishments, such as my mathematic paper written on the RSA encryption algorithm (SIT192), my machine learning exploration (SIT384), and my forensic plugin tool (SIT282). You can find out more about my specific academic achievements in my Achievements section. I am currently focusing on exploring more practical applications of cyber security alongside my studies, including switching to Linux to begin development on my "Vulnerability Lab", where I explore different exploits, subsequently writing [reports](../blog) on my findings.
 
 ---
 
@@ -23,7 +23,7 @@ Throughout my studies, I have been able to engage in many tasks that have allowe
 - [**Project 3:** RSA Algorithm Paper](https://github.com/paigehai/RSA-Algorithm/blob/main/RSA-Algorithm.pdf)  
   A mathematical paper examining the RSA algorithm and its supporting concepts. This report explores its proof and provides engaging examples.
 
-I have been given the opportunity to become an **Associate Teaching Fellow with Deakin University** given my passion for assisting other students and sharing knowledge. As a result, I have created many videos to guide students through common areas of difficulty. You can view these videos in my Projects page.
+For more projects, explore my [projects overview](../projectsoverview)!
 
 ---
 
@@ -39,6 +39,7 @@ I have also recently moved from Windows to Linux as I wanted to explore a more o
   <img src="images/desktop.png" alt="Current Linux Mint Build" style="width: 900px; border-radius: 12px;">
 </div>
 
+I am an **Associate Teaching Fellow with Deakin University** as I have a passion for assisting other students and sharing knowledge. As a result, I have created many [videos](../teaching) to guide students through common areas of difficulty.
 
 
 #### Let's Connect!
