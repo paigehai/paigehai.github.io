@@ -5,7 +5,7 @@ Hi! I’m Paige — a High-Distinction Cyber Security student at Deakin Universi
 #### Blog
 Experience the intersection of technical theory and art in computer science. This publication aims to recount the learning journey of a Cyber Security student.
 
-👉 [Read My Blog](http://127.0.0.1:8000/blog/index.md)
+👉 [Read My Blog](../blog/index.md)
 
 ---
 
