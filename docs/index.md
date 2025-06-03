@@ -1,6 +1,7 @@
-🤍 Based in Melbourne, I'm currently studying my Bachelor of Cyber Security at Deakin University, where I have gained so much insight into programming, security, and mathematics. I enjoy working with frameworks such as HTML, CSS, and JavaScript, and Python. When designing, I prefer to use Figma for prototyping, and Adobe Suite for graphic design.
 
-In my spare time, I am usually being active and exploring nature, cooking up a delicious meal in the kitchen or hard at work learning something new in the cyber world! 💻
+I am Paige Haines, a dedicated cybersecurity student residing in the vibrant city of Melbourne. My passion lies at the intersection of art and technology, where I explore concepts of technological advancements, innovative projects, and design.
+
+I am currently studying a Bachelor of Cyber Security from Deakin University in Melbourne, with a graduation date of October 2026. This academic foundation is actively equipping me with a solid understanding of the principles that underpin cybersecurity, providing me with the knowledge to contribute to Information Security teams through a seamless blend of expertise and distinction.
 
 ---
 
