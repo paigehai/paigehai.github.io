@@ -26,4 +26,4 @@ I’m an Associate Teaching Fellow for SIT111: Computer Systems at Deakin Univer
 #### Design and Social Media Work
 View my graphic design, 3D modelling, and UX/UI work.
 
-👉 [View Design Work](design/design.md)
+👉 [View Design Work](../design.md)
