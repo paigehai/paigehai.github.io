@@ -1,6 +1,6 @@
 🤍 Based in Melbourne, I'm currently studying my Bachelor of Cyber Security at Deakin University, where I have gained so much insight into programming, security, and mathematics. I enjoy working with frameworks such as HTML, CSS, and JavaScript, and Python. When designing, I prefer to use Figma for prototyping, and Adobe Suite for graphic design.
 
-In my spare time, I am usually being active and exploring nature, cooking up a delicious meal in the kitchen or hard at work learning something new in the cyber world! 💻
+In my spare time, I am usually being active and exploring nature, cooking up a delicious meal in the kitchen or hard at work learning something new in the cyber world! 💻 
 
 ---
 
