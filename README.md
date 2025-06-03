@@ -27,11 +27,11 @@ Throughout my studies, I have been able to engage in many tasks that have allowe
 ---
 
 #### Skills
-My skills are largely involved with industry-relevant forensic tools such as Autopsy, Wireshark, FTK Imager, Volatility, Ghidra and BlockCypher. I am proficient in languages C++, C#, and HTML/CSS/JavaScript. I am developing my skills in Python. 
+My skills are largely involved with industry-relevant forensic tools such as Autopsy, Wireshark, FTK Imager, Volatility, Ghidra and BlockCypher. I am proficient in languages C++, C#, and HTML/CSS/JavaScript. I am developing my skills in Python.<br><br>
 
 <div style="display: flex; justify-content: center;">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=paigehai&layout=compact&theme=default&langs_count=8" style="width: 40%; max-width: 900px; border-radius: 10px;" alt="Top languages chart">
-</div>
+</div><br><br>
 
 I have also recently moved from Windows to Linux as I wanted to explore a more open-source approach to my workflow. I decided on Linux Mint, due to the ease of implementation!
 
