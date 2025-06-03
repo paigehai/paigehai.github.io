@@ -1,0 +1,100 @@
+:root {
+  --md-primary-fg-color: #5c6bc0;   /* Indigo */
+  --md-accent-fg-color: #f06292;    /* Pink */
+}
+
+/* Override header link color, buttons, etc. */
+a, .md-nav__link, .md-header, .md-footer {
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* Change font styling for header and titles */
+
+.site-name,
+.site-title,
+header .site-name {
+  text-transform: none !important;
+}
+
+
+/* Title colour */
+.site-name,
+.site-title,
+header .site-name {
+  color: #7576ed !important;
+}
+
+/* Match site title font to navigation (Fira Mono) */
+.md-header__title,
+.md-nav__title,
+.md-logo {
+  font-family: "Fira Mono", monospace !important;
+  color: #7576ed !important; /* your custom purple */
+  font-weight: 600; /* optional: tweak weight */
+  font-size: 1.2rem; /* optional: adjust size */
+}
+
+.md-header {
+  background-color: var(--md-primary-fg-color) !important;
+}
+
+/* For buttons and highlights */
+button, .md-button {
+  background-color: var(--md-accent-fg-color) !important;
+}
+
+/* Set site title color to #7576ed */
+.md-header__title,
+.md-nav__title,
+.md-logo {
+  color: #7576ed !important;
+}
+
+/* Tab highlights */
+.md-tabs__link--active,
+.md-tabs__item--active > a {
+  color: #7576ed !important;
+  border-bottom: 2px solid #7576ed !important;
+}
+
+/* Divider line adjustments */
+hr {
+  border: none;
+  border-top: 1px solid rgba(117, 118, 237, 0.4);
+}
+
+/* Centre-align all images */
+.md-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjust header capitalisation */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}
+
+/* Show dropdown menu on hover */
+.nav-link.dropdown-toggle:hover + .md-nav__list {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Hide dropdowns by default */
+.md-nav__list {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 100%; /* dropdown below the parent */
+  z-index: 1000;
+}
+
+/* Make sure parent is positioned relative */
+.nav-item {
+  position: relative;
+}
