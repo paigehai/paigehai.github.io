@@ -2,8 +2,13 @@ site_name: Paige Haines ✹ Portfolio
 theme:
   name: simple-blog
   custom_dir: overrides
+  favicon: assets/favicon.png
+  palette:
+    primary: deep purple
+    accent: deep purple
 extra_css:
   - css/extra.css
+
 nav:
   - Hi, I'm Paige! 👋: index.md
   - Projects:

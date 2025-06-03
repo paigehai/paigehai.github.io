@@ -1,6 +1,6 @@
 :root {
   --md-primary-fg-color: #5c6bc0;   /* Indigo */
-  --md-accent-fg-color: #f06292;    /* Pink */
+  --md-accent-fg-color: #f8c8dc;    /* Pink */
 }
 
 /* Override header link color, buttons, etc. */
@@ -40,7 +40,7 @@ header .site-name {
 
 /* For buttons and highlights */
 button, .md-button {
-  background-color: var(--md-accent-fg-color) !important;
+  background-color: #f8c8dc !important;
 }
 
 /* Set site title color to #7576ed */
