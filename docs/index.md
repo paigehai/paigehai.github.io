@@ -5,7 +5,9 @@ In my spare time, I am usually being active and exploring nature, cooking up a d
 ---
 
 #### A Work in Progress
-My studies have been highlighted by many key accomplishments, such as my mathematic paper written on the RSA encryption algorithm (SIT192), my machine learning exploration (SIT384), and my forensic plugin tool (SIT282). You can find out more about my specific academic achievements in my Achievements section. I am currently focusing on exploring more practical applications of cyber security alongside my studies, including switching to Linux to begin development on my "Vulnerability Lab", where I explore different exploits, subsequently writing [reports](blog/index.md) on my findings.
+My studies have been highlighted by many key accomplishments, such as my mathematic paper written on the RSA encryption algorithm (SIT192), my machine learning exploration (SIT384), and my forensic plugin tool (SIT282). You can find out more about my specific academic achievements in my [academia](academia.md) section. 
+
+I am currently focusing on exploring more practical applications of cybersecurity alongside my studies where I explore different exploits, subsequently writing [reports](blog/index.md) on my findings.
 
 ---
 
