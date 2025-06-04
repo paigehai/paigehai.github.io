@@ -7,7 +7,7 @@ theme:
     primary: deep purple
     accent: deep purple
 extra_css:
-  - css/extra.css
+  - /css/extra.css
 
 nav:
   - Hi, I'm Paige! 👋: index.md
