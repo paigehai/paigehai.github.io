@@ -18,5 +18,5 @@ Over the years, I have found a passion for creating and developing programs in f
 - [**Project 6:** Student Tutor Network](https://github.com/paigehai/StudentTutorNetwork)  
   A C++ CLI application that allows students to easily connect with tutors for academic support.
 
-- [**Project 6:** To-Do List Application](https://github.com/paigehai/ListfulToDoList)  
+- [**Project 7:** To-Do List Application](https://github.com/paigehai/ListfulToDoList)  
   A to-do list application with a visually pleasing interface, an experiment in combining design with functionality.

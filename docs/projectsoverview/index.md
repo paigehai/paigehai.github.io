@@ -2,6 +2,13 @@ Hi! I’m Paige — a High-Distinction Cyber Security student at Deakin Universi
 
 ---
 
+#### GitHub Projects  
+Explore my personal and university projects in cybersecurity, web development, and machine learning. Each project showcases practical skills and applied knowledge across different domains of tech.
+
+👉 [View GitHub Projects](../github.md)
+
+---
+
 #### Blog
 Experience the intersection of technical theory and art in computer science. This publication aims to recount the learning journey of a Cyber Security student.
 
