@@ -10,7 +10,7 @@ Over the years, I have found a passion for creating and developing programs in f
   A mathematical paper examining the RSA algorithm and its supporting concepts. This report explores its proof and provides engaging examples.
 
 - [**Project 4:** dd and JohnTheRipper Forensic Scripts](https://github.com/paigehai/Forensics-Scripts)  
-  Two scripts that were created to help with running *dd* and *JohnTheRipper* during my studies.
+  Two scripts that were created to help with running *dd* and *John The Ripper*.
 
 - [**Project 5:** 2048-Style Game](https://github.com/paigehai/Revised2048Game)  
   A game created using HTML, CSS, and JS with integrated unit testing, Docker health checks and a Jenkins pipeline.
