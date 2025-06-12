@@ -10,6 +10,12 @@ An investigation into one part of the highly sophisticated Equation Group APT.
 A breakdown of common organisational security pitfalls and how human factors affect cybersecurity resilience.  
 *Cybersecurity communication, policy critique, and behavioural risk evaluation in workplaces.*
 
+## 🖱 Threat Intelligence
+
+###### [Why Am I Pursuing Threat Intelligence](posts/why-threat-intel.md)
+Blending strong writing, analytical thinking, and an eye for detail to produce clear, actionable intelligence.
+*Threat reporting, technical communication, stakeholder-focused analysis, and cyber investigations.*
+
 ## 💻 Programming
 
 ###### [The Reaction Timer That Made Me Love Programming](posts/reaction-timer.md)
