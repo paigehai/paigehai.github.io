@@ -2,7 +2,7 @@
 title: "Deloitte Cyber Job Simulation Write Up"
 ---
 
-*June 12, 2025*
+*June 13, 2025*
 
 *This write-up is part of my ongoing write-up series, exploring cybersecurity challenges, and threat intelligence practices utilised in the day-to-day operations of a threat analyst.*
 
