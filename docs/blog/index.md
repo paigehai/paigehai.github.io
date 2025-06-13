@@ -13,8 +13,12 @@ A breakdown of common organisational security pitfalls and how human factors aff
 ## 🖱 Threat Intelligence
 
 ###### [Why Am I Pursuing Threat Intelligence](posts/why-threat-intel.md)
-Blending strong writing, analytical thinking, and an eye for detail to produce clear, actionable intelligence.
+Blending strong writing, analytical thinking, and an eye for detail to produce clear, actionable intelligence.  
 *Threat reporting, technical communication, stakeholder-focused analysis, and cyber investigations.*
+
+###### [Deloitte Cyber Job Simulation Write Up](posts/deloitte-write-up.md)
+A job simulation exercise that involved reading web activity logs, supporting a client in a cybersecurity breach, and providing analytical, data-based conclusions to identify suspicious user activity.  
+*Threat analysis, cyber investigations, analysis of web logs, forensic report writing.*
 
 ## 💻 Programming
 
