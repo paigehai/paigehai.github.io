@@ -2,7 +2,7 @@
 title: "The Reaction Timer That Made Me Love Programming"
 ---
 
-*September 17, 2024*
+*Sept 17, 2024*
 
 *New beginnings with new understandings*
 
