@@ -6,7 +6,7 @@ title: "Unteachable and the Art of Becoming"
   <img src="../../posts/images/unteachable.png" alt="Unteachable and the Art of Becoming" style="width: 400px;">
 </div>
 
-*November 01, 2024*
+*Nov 01, 2024*
 
 *A thoughtful meditation on growth and resolve.*
 
