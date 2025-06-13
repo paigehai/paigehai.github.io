@@ -18,3 +18,37 @@ In addition to my academic studies, I am also an **Assistant Secretary of the De
 ---
 
 I take pride in maintaining high academic standards while actively engaging with the cybersecurity community, striving to bridge the gap between technical expertise and real-world impact.
+
+#### Certifications and Awards 
+**Certified Secure Computer User (C/SCU)**  
+*EC-Council — May 2024*  
+Earned certification demonstrating a strong foundation in secure computer usage and best practices for protecting information systems.
+
+<div style="text-align: center;">
+  <img src="../images/cscu.png" alt="Certified Secure Computer User (C|SCU) Certification" style="width: 500px; border-radius: 12px;">
+</div>
+
+**Best Security Student Nominee**  
+*Australian Women in Security Awards — April 2025*  
+Nominated for outstanding achievement as a security student, recognised by industry professionals. Proud to be involved with the Deakin University Cybersecurity Association (DUCA) and collaborate with organisations such as the Australian Women in Security Network (AWSN) and Women in CyberSecurity (WiCyS) Australia Affiliate, which provide invaluable support and mentorship for women pursuing careers in cybersecurity.
+
+<div style="text-align: center;">
+  <img src="../images/bss.jpeg" alt="Women in Security Nomination" style="width: 500px; border-radius: 12px;">
+</div>
+
+**24 Security Challenges — Advent of Cyber 2024**  
+*TryHackMe — December 2024*  
+Successfully completed a series of hands-on cybersecurity challenges encompassing blue, red, and purple team exercises, enhancing practical skills across multiple domains of cybersecurity during a focused month-long event.
+
+<div style="text-align: center;">
+  <img src="../images/AdventofCyber.jpeg" alt="Advent of Cyber Completion" style="width: 500px; border-radius: 12px;">
+</div>
+
+
+**Deloitte — Cyber Job Simulation**  
+*Forage — June 2025*  
+Investigated a practical data breach on behalf of a client, answering relevant questions to demonstrate my understanding of the forensic analysis process.
+
+<div style="text-align: center;">
+  <img src="../images/deloitte-completion-cert.png" alt="Advent of Cyber Completion" style="width: 500px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+</div>
