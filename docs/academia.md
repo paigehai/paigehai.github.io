@@ -56,7 +56,6 @@ Successfully completed a series of hands-on cybersecurity challenges encompassin
   <img src="../images/AdventofCyber.jpeg" alt="Advent of Cyber Completion" style="width: 500px; border-radius: 12px;">
 </div>
 
-
 **Deloitte — Cyber Job Simulation**  
 *Forage — June 2025*  
 Investigated a practical data breach on behalf of a client, answering relevant questions to demonstrate my understanding of the forensic analysis process.
