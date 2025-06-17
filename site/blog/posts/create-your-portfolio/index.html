@@ -25,6 +25,7 @@
             <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
                 <link href="../../../css/extra.css" rel="stylesheet">
                 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" rel="stylesheet">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/pygments/2.15.1/styles/material.min.css" rel="stylesheet">
                 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"></script>
                 <script src="../../../js/katex.js"></script>
@@ -185,7 +186,7 @@
         <p><p><em>June 17, 2025</em></p>
 <p>After a close friend of mine had introduced me to GitHub pages through her own portfolio (shout out to you, <a href="https://briannalaird.com">Brianna</a>!), I quickly became hooked on the idea of creating my own portfolio from scratch! Taking note of my walkthrough in making my portfolio was both for my own reference, and so I am able to guide others on how to create their own portfolio's. What good is knowledge if you cannot share it!</p>
 <p>In this guide, I provide step-by-step instructions, including code snippets, that you can use to create your own GitHub Pages portfolio, and maintain it. This is the method I have found to be most convenient, however, I always encourage others to challenge my process (and let me know if you find something even better that I can implement!).</p>
-<p><em>Please note:</em> this guide has been created using MKDocs and their <em>Simple Blog</em> theme, so if you have chosen another </p>
+<p><em>Please note:</em> this guide has been created using MKDocs and their <em>Simple Blog</em> theme, so if you have chosen another, then this process may not work as effectively. </p>
 <h3 id="step-1-create-your-github-repository">Step 1: Create Your GitHub Repository</h3>
 <p>To get started on my portfolio, I needed to create a GitHub repository. To ensure it works as expected, you must include <code>.github.io</code> in the repository name.<br />
 For mine, I chose: <code>paigehai.github.io</code>.  </p>
@@ -198,7 +199,7 @@ For mine, I chose: <code>paigehai.github.io</code>.  </p>
     <img src="../../posts/images/port5.png" alt="GitHub Portfolio" style="max-width: 600px">  
 </div>
 
-<p>Once this had been created, I proceeded to populate the repository with my default GitHub README.md file. </p>
+<p>Once this had been created, I proceeded to populate the repository with my default GitHub <code>README.md</code> file. </p>
 <div style="text-align: center;">
     <img src="../../posts/images/port2.png" alt="GitHub Portfolio" style="max-width: 700px">  
 </div>
@@ -230,7 +231,7 @@ For mine, I chose: <code>paigehai.github.io</code>.  </p>
     <img src="../../posts/images/port8.png" alt="GitHub Portfolio" style="max-width: 700px">  
 </div>
 
-<p>Fernando Celmer's GitHub page provides a great step-by-step guide for how to install the template which I will outline.</p>
+<p><a href="https://github.com/FernandoCelmer">Fernando Celmer's GitHub page</a> provides a simple guide for how to install the template which I will outline below.</p>
 <p>To install MKDocs, run the following command from the command line (in the directory you want your portfolio in):</p>
 <pre class="highlight"><code>pip install mkdocs</code></pre>
 <p>Once you have installed MKDocs, you can now install the theme using PIP:
@@ -238,8 +239,9 @@ For mine, I chose: <code>paigehai.github.io</code>.  </p>
 <p>After the theme has been installed, edit the <code>mkdocs.yml</code> file and set the theme name to <code>simple-blog</code>:
 <pre class="highlight"><code>theme:
     name: simple-blog</code></pre></p>
+<p>Once completed, you can now move onto Step 3! If you had any trouble executing the above commands, read below.</p>
 <h4 id="method-2-the-paige-way">Method 2: The Paige Way</h4>
-<p>It is just my luck that I ran into some errors running these commands (maybe Linux?).</p>
+<p>It is just my luck that I ran into some errors running these commands (maybe Linux, or just my skillset?).</p>
 <div style="text-align: center;">
     <img src="../../posts/images/port9.png" alt="GitHub Portfolio" style="max-width: 700px">  
 </div>
@@ -248,16 +250,48 @@ For mine, I chose: <code>paigehai.github.io</code>.  </p>
 <pre class="highlight"><code>sudo apt install pipx</code></pre></p>
 <p>Once this is installed, proceed with the global MKDocs installation.</p>
 <pre class="highlight"><code>pipx install mkdocs</code></pre>
-<p>I then injected my selected theme into the pipx-managed MKDocs installation using:</p>
+<p>Injected the selected theme into the pipx-managed MKDocs installation using:</p>
 <pre class="highlight"><code>pipx inject mkdocs mkdocs-simple-blog</code></pre>
-<p>Once injected, I created a new project:
-<pre class="highlight"><code>mkdocs new paiges-portfolio</code></pre></p>
+<h3 id="step-3-maintain-the-website">Step 3: Maintain the Website</h3>
+<p>Once you have successfully installed MKDocs and the site template, create a new project:
+<pre class="highlight"><code>mkdocs portfolio</code></pre></p>
 <p>This will initialise the following files:
-<pre class="highlight"><code></code></pre></p>
-<p>Once all of these steps have been completed, I changed into the appropriate directory:
-<pre class="highlight"><code>cd paiges-portfolio</code></pre></p>
-<p>and served the site locally.
-<pre class="highlight"><code>mkdocs serve</code></pre></p></p>
+<pre class="highlight"><code>portfolio/
+├── docs/
+│   └── index.md          # Your homepage content
+└── mkdocs.yml            # Main configuration file</code></pre></p>
+<p>Once all of these steps have been completed, change into the appropriate directory:
+<pre class="highlight"><code>cd portfolio </code></pre></p>
+<p>build the site
+<pre class="highlight"><code>mkdocs build</code></pre>
+and serve the site locally.</p>
+<pre class="highlight"><code>mkdocs serve</code></pre>
+<p>You are now able to view the website at <code>http://localhost:8000/</code>. This is the time where you can really challenge both your creativity and your development skills, as you can now start to build your website using the template as a base.</p>
+<blockquote>
+<p>I found adding an <code>extra.css</code> file, and images folders really helped me manage my backend. It also helped me refine my markdown skills, as my brain has been in Python development mode over the first half of the year.</p>
+</blockquote>
+<h4 id="implement-a-deployment-script">Implement a Deployment Script</h4>
+<p>When I was editing my website, I found that manually inputting commands became incredibly time-consuming. In addition, sometimes pages wouldn't update and elements I added weren't being reflected. This became a task as I really needed a reliable method to deploy the website without facing issues of backdated content. </p>
+<p>So, I created a simple script titled <code>deploy.sh</code> in the same directly as my portfolio, that you can implement if you created your site using MKDocs. This script allowed me to update my <code>master</code> branch and keep the content to the most recent version. It has saved me many hours of banging my head against my desk, that's for sure!</p>
+<pre class="highlight"><code class="language-angular2html">#!/bin/bash
+
+# Stage all changes
+git add .
+
+# Commit with message
+git commit -m "Update docs"
+
+# Push changes to master or main depending on your main branch
+git push origin master/main
+
+# Build and deploy to GitHub Pages
+mkdocs gh-deploy --clean --force</code></pre>
+<p>To execute the script, ensure that you have execute permissions.
+<pre class="highlight"><code>chmod +x deploy.sh</code></pre></p>
+<p>To execute the script, you now simply need to execute:
+<pre class="highlight"><code>./deploy.sh</code></pre></p>
+<p>When you run the script, GitHub will ask you to log in using your username and password. When entering your password, ensure you have set up a <strong>Classic token</strong> in GitHub, and use this, otherwise if you have MFA (like myself), you will receive an error.</p>
+<p>Once you have completed all of the above, congratulations! 🎉 You are now able to start maintaining your own portfolio website and update it as you see fit! (I will literally be using this method to upload this very blog post!).</p></p>
     </article>
 </section>
 <!-- endblock -->

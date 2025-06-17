@@ -1,6 +1,6 @@
 :root {
   --md-primary-fg-color: #5c6bc0;   /* Indigo */
-  --md-accent-fg-color: #f8c8dc;    /* Pink */
+  --md-accent-fg-color: #ffffff;
 }
 
 /* Override header link color, buttons, etc. */

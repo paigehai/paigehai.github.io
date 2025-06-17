@@ -172,4 +172,7 @@ To execute the script, you now simply need to execute:
 
 When you run the script, GitHub will ask you to log in using your username and password. When entering your password, ensure you have set up a **Classic token** in GitHub, and use this, otherwise if you have MFA (like myself), you will receive an error.
 
+### Step 4: Deploying the Correct Site
+GitHub allows you to select different branches to be used as your main site. Once you have committed your changes to GitHub, double-check that GitHub is being built from the `gh-pages` branch in the `/(root)` folder. 
+
 Once you have completed all of the above, congratulations! 🎉 You are now able to start maintaining your own portfolio website and update it as you see fit! (I will literally be using this method to upload this very blog post!).
