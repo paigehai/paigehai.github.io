@@ -45,7 +45,7 @@ Earned certification demonstrating a solid understanding of fundamental cybersec
 Nominated for outstanding achievement as a security student, recognised by industry professionals. Proud to be involved with the Deakin University Cybersecurity Association (DUCA) and collaborate with organisations such as the Australian Women in Security Network (AWSN) and Women in CyberSecurity (WiCyS) Australia Affiliate, which provide invaluable support and mentorship for women pursuing careers in cybersecurity.
 
 <div style="text-align: center;">
-  <img src="../images/bss.jpeg" alt="Women in Security Nomination" style="width: 500px; border-radius: 12px;">
+  <img src="../images/bss.jpeg" alt="Women in Security Nomination" style="width: 600px; border-radius: 12px;">
 </div>
 
 **24 Security Challenges — Advent of Cyber 2024**  
@@ -53,7 +53,7 @@ Nominated for outstanding achievement as a security student, recognised by indus
 Successfully completed a series of hands-on cybersecurity challenges encompassing blue, red, and purple team exercises, enhancing practical skills across multiple domains of cybersecurity during a focused month-long event.
 
 <div style="text-align: center;">
-  <img src="../images/AdventofCyber.jpeg" alt="Advent of Cyber Completion" style="width: 500px; border-radius: 12px;">
+  <img src="../images/AdventofCyber.jpeg" alt="Advent of Cyber Completion" style="width: 600px; border-radius: 12px;">
 </div>
 
 **Deloitte — Cyber Job Simulation**  
@@ -61,5 +61,5 @@ Successfully completed a series of hands-on cybersecurity challenges encompassin
 Investigated a practical data breach on behalf of a client, answering relevant questions to demonstrate my understanding of the forensic analysis process.
 
 <div style="text-align: center;">
-  <img src="../images/deloitte-completion-cert.png" alt="Advent of Cyber Completion" style="width: 500px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+  <img src="../images/deloitte-completion-cert.png" alt="Advent of Cyber Completion" style="width: 600px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
 </div>
