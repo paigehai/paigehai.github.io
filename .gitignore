@@ -1,1 +1,16 @@
-site/
+# Python virtual environment
+venv/
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.DS_Store
+*.swp
+*.swo
+
+# Logs and local config
+*.log
+.env
+

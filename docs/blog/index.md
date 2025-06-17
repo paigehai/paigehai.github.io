@@ -1,5 +1,12 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
+###### [A Cheat Sheet on How to Create Your Own GitHub Pages Portfolio](posts/create-your-portfolio.md)
+*June 17, 2025*  
+  
+A quick cheat sheet for those who are interested in putting their development skills to the test. This cheat sheet provides the preliminary steps in setting up and deploying a GitHub Pages portfolio that you can use to show off your work.
+*Portfolio creation, cyber portfolio, and web development.*
+
+
 ###### [Deloitte Cyber Job Simulation Write Up](posts/deloitte-write-up.md)
 *June 13, 2025*  
   

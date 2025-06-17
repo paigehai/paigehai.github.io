@@ -1,14 +1,34 @@
 site_name: Paige Haines ✹ Portfolio
+site_url: https://paigehai.github.io.com/
+
 
 theme:
   name: simple-blog
-  custom_dir: overrides
+  custom_dir: overrides/
   favicon: assets/favicon.png
   palette:
     primary: deep purple
     accent: deep purple
+
 extra_css:
-  - /css/extra.css
+  - css/extra.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/pygments/2.15.1/styles/material.min.css
+
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - codehilite:
+      guess_lang: false
+      linenums: false
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js
+  - js/katex.js
 
 nav:
   - Hi, I'm Paige! 👋: index.md
