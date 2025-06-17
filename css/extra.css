@@ -1,6 +1,6 @@
 :root {
   --md-primary-fg-color: #5c6bc0;   /* Indigo */
-  --md-accent-fg-color: #f8c8dc;    /* Pink */
+  --md-accent-fg-color: #ffffff;
 }
 
 /* Override header link color, buttons, etc. */
@@ -40,7 +40,7 @@ header .site-name {
 
 /* For buttons and highlights */
 button, .md-button {
-  background-color: #f8c8dc !important;
+  background-color: transparent !important;
 }
 
 /* Set site title color to #7576ed */
@@ -70,6 +70,16 @@ hr {
   margin-right: auto;
 }
 
+/* Add image borders*/
+img {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(91, 71, 143, 0.15);
+  /slight rounding for smoother edges */
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+
 /* Adjust header capitalisation */
 h1, h2, h3, h4, h5, h6 {
   text-transform: none !important;
@@ -98,4 +108,88 @@ h1, h2, h3, h4, h5, h6 {
 /* Make sure parent is positioned relative */
 .nav-item {
   position: relative;
+}
+
+/* Floating glassy code blocks */
+pre {
+  white-space: pre !important;
+  position: relative; /* for button positioning */
+  background: rgba(211, 203, 255, 0.36) !important;
+  border: 1px solid rgb(23, 60, 182) !important;
+  color: #201351 !important;
+  border-radius: 12px !important;
+  font-family: "Fira Mono", monospace !important;
+  padding: 1.2rem 1.5rem !important;
+  overflow-x: auto !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(91, 71, 143, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+
+/* Add subtle lift on hover */
+pre:hover {
+  box-shadow: 0 12px 32px rgba(91, 71, 143, 0.4);
+}
+
+/* Inline code with glassy style */
+code {
+  background: rgba(243, 232, 255, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 6px !important;
+  padding: 0.25em 0.5em !important;
+  font-family: "Fira Mono", monospace !important;
+  color: #201351 !important;
+  backdrop-filter: blur(8px);
+  text-shadow: none !important;
+}
+
+pre code {
+  all: unset !important;
+  display: block;
+  color: inherit !important;
+  font: inherit !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  white-space: pre !important;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 28px;
+  width: 28px;
+  padding: 0;
+  border: none;
+  background-color: transparent !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  color: var(--md-primary-fg-color);
+  font-family: "Fira Mono", monospace;
+  font-size: 0.85rem;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+}
+
+.copy-btn.copied {
+  width: auto;
+  padding: 0 0.6rem;
+  font-weight: bold;
+  color: #4caf50; /* green */
+  cursor: default;
+  pointer-events: none;
 }
