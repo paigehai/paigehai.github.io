@@ -25,7 +25,19 @@ I take pride in maintaining high academic standards while actively engaging with
 Earned certification demonstrating a strong foundation in secure computer usage and best practices for protecting information systems.
 
 <div style="text-align: center;">
-  <img src="../images/cscu.png" alt="Certified Secure Computer User (C|SCU) Certification" style="width: 500px; border-radius: 12px;">
+  <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=qtV1pRkvLkG9Z6E2z3NuPebdCMSrkiulOzn9bTCs0xY=" target="_blank" rel="noopener noreferrer">
+    <img src="images/cscu.png" alt="Certified Secure Computer User (C|SCU) Certification" style="width: 600px; border-radius: 12px;">
+  </a>
+</div>
+
+**Certified in Cybersecurity (CC)**  
+*ISC2 — June 2025*  
+Earned certification demonstrating a solid understanding of fundamental cybersecurity principles and best practices to protect information systems and manage digital risks effectively.
+
+<div style="text-align: center;">
+  <a href="https://www.credly.com/badges/b5cf2365-75ce-428c-b832-a44c72ed3210/linked_in_profile" target="_blank" rel="noopener noreferrer">
+    <img src="images/cc.png" alt="Certified in Cybersecurity (CC) Certification" style="width: 600px; border-radius: 12px;">
+  </a>
 </div>
 
 **Best Security Student Nominee**  
