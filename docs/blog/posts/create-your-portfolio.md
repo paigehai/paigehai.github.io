@@ -175,4 +175,8 @@ When you run the script, GitHub will ask you to log in using your username and p
 ### Step 4: Deploying the Correct Site
 GitHub allows you to select different branches to be used as your main site. Once you have committed your changes to GitHub, double-check that GitHub is being built from the `gh-pages` branch in the `/(root)` folder. 
 
+<div style="text-align: center;">
+    <img src="../../posts/images/port10.png" alt="GitHub Portfolio" style="max-width: 600px">  
+</div> 
+
 Once you have completed all of the above, congratulations! 🎉 You are now able to start maintaining your own portfolio website and update it as you see fit! (I will literally be using this method to upload this very blog post!).
