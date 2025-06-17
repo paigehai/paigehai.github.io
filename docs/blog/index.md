@@ -13,7 +13,7 @@ A quick cheat sheet for those who are interested in putting their development sk
 A job simulation exercise that involved reading web activity logs, supporting a client in a cybersecurity breach, and providing analytical, data-based conclusions to identify suspicious user activity.  
 *Threat analysis, cyber investigations, analysis of web logs, forensic report writing.*
 
-###### [Why Am I Pursuing Threat Intelligence](posts/why-threat-intel.md)
+###### [Why I’m Pursuing Threat Intelligence](posts/why-threat-intel.md)
 *June 12, 2025*  
   
 Blending strong writing, analytical thinking, and an eye for detail to produce clear, actionable intelligence.  

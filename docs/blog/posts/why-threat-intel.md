@@ -1,5 +1,5 @@
 ---
-title: "Why I’m Pursuing Threat Intelligence "
+title: "Why I’m Pursuing Threat Intelligence"
 ---
 
 *June 12, 2025*
