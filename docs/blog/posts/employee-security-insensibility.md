@@ -3,7 +3,7 @@ title: "Problems of Employee Security Insensibility"
 ---
 
 <div style="text-align: center;">
-  <img src="/images/sensibility-thumb.png" alt="Employee Security Sensibility Thumbnail" style="max-width: 500px">
+  <img src="/images/sensibility-thumb.png" alt="Employee Security Sensibility Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 *July 02, 2024*

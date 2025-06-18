@@ -31,13 +31,13 @@ For more projects, explore my [projects overview](projectsoverview/index.md)!
 #### Skills
 My skills are largely involved with industry-relevant forensic tools such as Autopsy, Wireshark, FTK Imager, Volatility, Ghidra and BlockCypher. I am proficient in languages C++, C#, and HTML/CSS/JavaScript. I am developing my skills in Python. 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=paigehai&layout=compact&theme=default&langs_count=8" style="width: 40%; max-width: 900px; border-radius: 10px;" alt="Top languages chart">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=paigehai&layout=compact&theme=default&langs_count=8" style="width: 100%; max-width: 300px; height: auto; border-radius: 10px;" alt="Top languages chart">
 </div>
 
 I have also recently moved from Windows to Linux as I wanted to explore a more open-source approach to my workflow. I decided on Linux Mint, due to the ease of implementation!
 
 <div style="text-align: center;">
-  <img src="images/desktop.png" alt="Current Linux Mint Build" style="width: 900px; border-radius: 12px;">
+  <img src="images/desktop.png" alt="Current Linux Mint Build" style="width: 100%; max-width: 1000px; height: auto; border-radius: 12px;">
 </div>
 
 I am an **Associate Teaching Fellow with Deakin University** as I have a passion for assisting other students and sharing knowledge. As a result, I have created many [videos](teaching.md) to guide students through common areas of difficulty.
@@ -50,7 +50,7 @@ Earned certification demonstrating a strong foundation in secure computer usage 
 
 <div style="text-align: center;">
   <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=qtV1pRkvLkG9Z6E2z3NuPebdCMSrkiulOzn9bTCs0xY=" target="_blank" rel="noopener noreferrer">
-    <img src="images/cscu.png" alt="Certified Secure Computer User (C|SCU) Certification" style="width: 600px; border-radius: 12px;">
+    <img src="images/cscu.png" alt="Certified Secure Computer User (C|SCU) Certification" style="width: 100%; max-width: 600px; height: auto; border-radius: 12px;">
   </a>
 </div>
 
@@ -60,7 +60,7 @@ Earned certification demonstrating a solid understanding of fundamental cybersec
 
 <div style="text-align: center;">
   <a href="https://www.credly.com/badges/b5cf2365-75ce-428c-b832-a44c72ed3210/linked_in_profile" target="_blank" rel="noopener noreferrer">
-    <img src="images/cc.png" alt="Certified in Cybersecurity (CC) Certification" style="width: 600px; border-radius: 12px;">
+    <img src="images/cc.png" alt="Certified in Cybersecurity (CC) Certification" style="width: 100%; max-width: 600px; height: auto; border-radius: 12px;">
   </a>
 </div>
 

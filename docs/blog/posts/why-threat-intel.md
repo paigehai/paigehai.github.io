@@ -3,7 +3,7 @@ title: "Why I’m Pursuing Threat Intelligence"
 ---
 
 <div style="text-align: center;">
-  <img src="/images/threatintel-thumb.png" alt="Threat Intelligence Thumbnail" style="max-width: 500px">
+  <img src="/images/threatintel-thumb.png" alt="Threat Intelligence Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div> 
 
 *June 12, 2025*
@@ -20,8 +20,8 @@ Throughout these varying experiences, one single thread remained constant: my at
 
 My work in cybersecurity has allowed me to merge these complementary skills, as demonstrated by the most amazing feedback given in my Computer Forensics and Investigations unit:
 This was further demonstrated in my SIT282 class, where I received the most amazing feedback:
-<p align="center">
-  <img src="../../posts/images/feedback.png" alt="Feedback">
+<p>
+  <img src="../../posts/images/feedback.png" alt="Feedback" style="width: 100%; max-width: 300px; height: auto;">
 </p>
 
 (This is why I do what I do!!! 🥹)

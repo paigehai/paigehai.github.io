@@ -3,7 +3,7 @@ title: "Unteachable and the Art of Becoming"
 ---
 
 <div style="text-align: center;">
-  <img src="/images/unteachable-thumb.png" alt="Unteachable Thumbnail" style="max-width: 500px">
+  <img src="/images/unteachable-thumb.png" alt="Unteachable Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 *Nov 01, 2024*

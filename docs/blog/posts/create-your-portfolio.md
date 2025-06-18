@@ -3,7 +3,7 @@ title: "A Cheat Sheet on How to Create Your Own GitHub Pages Portfolio"
 ---
 
 <div style="text-align: center;">
-  <img src="/images/github-thumb.png" alt="GitHub Pages Thumbnail" style="max-width: 500px">
+  <img src="/images/github-thumb.png" alt="GitHub Pages Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 *June 17, 2025*
@@ -18,43 +18,43 @@ To get started on my portfolio, I needed to create a GitHub repository. To ensur
 For mine, I chose: `paigehai.github.io`.  
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port1.png" alt="GitHub Portfolio" style="max-width: 400px">  
+    <img src="../../posts/images/port1.png" alt="GitHub Portfolio" style="width: 100%; max-width: 400px; height: auto;"> 
 </div>  
 
 Before clicking **Create Repository**, make sure **Add a README file** is checked.
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port5.png" alt="GitHub Portfolio" style="max-width: 600px">  
+    <img src="../../posts/images/port5.png" alt="GitHub Portfolio" style="width: 100%; max-width: 600px; height: auto;">
 </div>  
 
 Once this had been created, I proceeded to populate the repository with my default GitHub `README.md` file. 
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port2.png" alt="GitHub Portfolio" style="max-width: 700px">  
+    <img src="../../posts/images/port2.png" alt="GitHub Portfolio" style="width: 100%; max-width: 700px; height: auto;"> 
 </div>  
 
 Once you have created your repository, and have added a simple `README.md` file, navigate to the **Settings** tab in the repo.
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port3.png" alt="GitHub Portfolio" style="max-width: 700px">  
+    <img src="../../posts/images/port3.png" alt="GitHub Portfolio" style="width: 100%; max-width: 700px; height: auto;">
 </div>  
 
 Navigate to the **Pages** tab in the left panel. 
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port4.png" alt="GitHub Portfolio" style="max-width: 250px">  
+    <img src="../../posts/images/port4.png" alt="GitHub Portfolio" style="width: 100%; max-width: 250px; height: auto;">
 </div>  
 
 To deploy this current version of the website, we must select the **main** branch, under the **Branch** selection in the right panel.
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port6.png" alt="GitHub Portfolio" style="max-width: 700px">  
+    <img src="../../posts/images/port6.png" alt="GitHub Portfolio" style="width: 100%; max-width: 700px; height: auto;">
 </div>  
 
 You will now have a basic website that you can visit! 
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port7.png" alt="GitHub Portfolio" style="max-width: 800px">  
+    <img src="../../posts/images/port7.png" alt="GitHub Portfolio" style="width: 100%; max-width: 800px; height: auto;">
 </div>  
 
 ### Step 2: Build the Website
@@ -62,7 +62,7 @@ You will now have a basic website that you can visit!
 The theme that I chose for my website was [Simple Blog](https://github.com/FernandoCelmer/mkdocs-simple-blog) by MKDocs.
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port8.png" alt="GitHub Portfolio" style="max-width: 700px">  
+    <img src="../../posts/images/port8.png" alt="GitHub Portfolio" style="width: 100%; max-width: 700px; height: auto;">
 </div>  
 
 [Fernando Celmer's GitHub page](https://github.com/FernandoCelmer) provides a simple guide for how to install the template which I will outline below.
@@ -90,7 +90,7 @@ Once completed, you can now move onto Step 3! If you had any trouble executing t
 It is just my luck that I ran into some errors running these commands (maybe Linux, or just my skillset?).
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port9.png" alt="GitHub Portfolio" style="max-width: 700px">  
+    <img src="../../posts/images/port9.png" alt="GitHub Portfolio" style="width: 100%; max-width: 700px; height: auto;">
 </div> 
 
 If you also have issues, I have found an alternative method which begins by installing PIPX globally.
@@ -180,7 +180,7 @@ When you run the script, GitHub will ask you to log in using your username and p
 GitHub allows you to select different branches to be used as your main site. Once you have committed your changes to GitHub, double-check that GitHub is being built from the `gh-pages` branch in the `/(root)` folder. 
 
 <div style="text-align: center;">
-    <img src="../../posts/images/port10.png" alt="GitHub Portfolio" style="max-width: 600px">  
+    <img src="../../posts/images/port10.png" alt="GitHub Portfolio" style="width: 100%; max-width: 600px; height: auto;"> 
 </div> 
 
 Once you have completed all of the above, congratulations! 🎉 You are now able to start maintaining your own portfolio website and update it as you see fit! (I will literally be using this method to upload this very blog post!).

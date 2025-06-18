@@ -3,7 +3,7 @@ title: "The Reaction Timer That Made Me Love Programming"
 ---
 
 <div style="text-align: center;">
-  <img src="/images/timer-thumb.png" alt="Reaction Timer Thumbnail" style="max-width: 500px">
+  <img src="/images/timer-thumb.png" alt="Reaction Timer Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 *Sept 17, 2024*
