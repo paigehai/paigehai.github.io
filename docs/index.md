@@ -15,11 +15,23 @@ I am currently focusing on exploring more practical applications of cybersecurit
 
 Throughout my studies, I have been able to engage in many tasks that have allowed me the opportunity to expand my knowledge, beyond the standard degree. My best work can be viewed below.
 
+<div style="text-align: center; margin-top: 2.5rem; margin-bottom: 2.5rem;">
+  <img src="/images/ml-thumb.png" alt="Machine Learning Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
 - [**Project 1:** Machine Learning Optimisation Analysis](https://github.com/paigehai/ml-optimisation)  
   An analysis that explores the application of different tuning techniques on a set of five machine learning algorithms.
 
+<div style="text-align: center; margin-top: 2.5rem; margin-bottom: 2.5rem;">
+  <img src="/images/blockcyher-thumb.png" alt="BlockCypher Plugin Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
 - [**Project 2:** BlockCypher Plugin](https://github.com/paigehai/BlockCypher-Analysis-Plugin)  
   A plugin designed for use with BlockCypher, a blockchain tool. This plugin presents beautifully crafted visualisations for use alongside BlockCypher data.
+
+<div style="text-align: center; margin-top: 2.5rem; margin-bottom: 2.5rem;">
+  <img src="../images/rsa-thumb.png" alt="RSA Report Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
 
 - [**Project 3:** RSA Algorithm Paper](https://github.com/paigehai/RSA-Algorithm/blob/main/RSA-Algorithm.pdf)  
   A mathematical paper examining the RSA algorithm and its supporting concepts. This report explores its proof and provides engaging examples.
