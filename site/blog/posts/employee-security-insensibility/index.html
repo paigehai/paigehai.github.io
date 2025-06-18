@@ -184,7 +184,7 @@
             
         </header>
         <p><div style="text-align: center;">
-  <img src="/images/sensibility-thumb.png" alt="Employee Security Sensibility Thumbnail" style="max-width: 500px">
+  <img src="/images/sensibility-thumb.png" alt="Employee Security Sensibility Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>
 
 <p><em>July 02, 2024</em></p>
@@ -261,6 +261,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/turndown/dist/turndown.min.js"></script>
+
+<script>
+function downloadMarkdown() {
+  const turndownService = new TurndownService();
+
+  // Select main content area; adjust selector to fit your site structure
+  const mainContent = document.querySelector('main') || document.body;
+
+  if (!mainContent) {
+    alert('No content found to convert to Markdown.');
+    return;
+  }
+
+  const markdown = turndownService.turndown(mainContent.innerHTML);
+
+  const blob = new Blob([markdown], { type: 'text/markdown' });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = document.title.replace(/\s+/g, '_').toLowerCase() + '.md';
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
 </script>
 
             

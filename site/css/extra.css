@@ -196,3 +196,15 @@ pre code {
   cursor: default;
   pointer-events: none;
 }
+
+/*remove nav footer when printing*/
+@media print {
+  nav, footer {
+    display: none !important;
+  }
+
+  main {
+    width: 100%;
+    padding: 0;
+  }
+}
