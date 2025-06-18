@@ -1,7 +1,7 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/github-thumb.png" alt="GitHub Pages Thumbnail" style="max-width: 500px">
+  <img src="../images/github-thumb.png" alt="GitHub Pages Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 ###### [A Cheat Sheet on How to Create Your Own GitHub Pages Portfolio](posts/create-your-portfolio.md)
@@ -13,7 +13,7 @@ A quick cheat sheet for those who are interested in putting their development sk
 ---  
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/deloitte-thumb.png" alt="Deloitte Cyber Write Up Thumbnail" style="max-width: 500px">
+  <img src="../images/deloitte-thumb.png" alt="Deloitte Cyber Write Up Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 ###### [Deloitte Cyber Job Simulation Write Up](posts/deloitte-write-up.md)
@@ -25,7 +25,7 @@ A job simulation exercise that involved reading web activity logs, supporting a 
 ---   
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/threatintel-thumb.png" alt="Threat Intelligence Thumbnail" style="max-width: 500px">
+  <img src="../images/threatintel-thumb.png" alt="Threat Intelligence Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 ###### [Why I’m Pursuing Threat Intelligence](posts/why-threat-intel.md)
@@ -37,7 +37,7 @@ Blending strong writing, analytical thinking, and an eye for detail to produce c
 --- 
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/unteachable-thumb.png" alt="Unteachable Thumbnail" style="max-width: 500px">
+  <img src="../images/unteachable-thumb.png" alt="Unteachable Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 ###### [Unteachable and the Art of Becoming](posts/unteachable.md)
@@ -49,7 +49,7 @@ A personal reflection on what it means to learn, grow, and challenge fixed ideas
 --- 
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/timer-thumb.png" alt="Reaction Timer Thumbnail" style="max-width: 500px">
+  <img src="../images/timer-thumb.png" alt="Reaction Timer Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 ###### [The Reaction Timer That Made Me Love Programming](posts/reaction-timer.md)
@@ -61,7 +61,7 @@ A beginner coding journey sparked by building a simple reaction timer and the un
 --- 
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/sensibility-thumb.png" alt="Employee Security Sensibility Thumbnail" style="max-width: 500px">
+  <img src="../images/sensibility-thumb.png" alt="Employee Security Sensibility Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 ###### [Problems of Employee Security Insensibility](posts/employee-security-insensibility.md)
@@ -73,7 +73,7 @@ A breakdown of common organisational security pitfalls and how human factors aff
 --- 
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/malware-thumb.png" alt="Malware Deep Dive Thumbnail" style="max-width: 500px">
+  <img src="../images/malware-thumb.png" alt="Malware Deep Dive Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
 ###### [Malware Deep Dive – Equation Triple Fantasy](posts/malware-deepdive.md)
