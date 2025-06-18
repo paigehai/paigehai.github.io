@@ -184,7 +184,7 @@
             
         </header>
         <p><div style="text-align: center;">
-  <img src="/images/deloitte-thumb.png" alt="Deloitte Cyber Write Up Thumbnail" style="max-width: 500px">
+  <img src="/images/deloitte-thumb.png" alt="Deloitte Cyber Write Up Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>
 
 <p><em>June 13, 2025</em></p>
@@ -204,17 +204,17 @@
 <p>To answer this question, it was important to begin analysing the activity within the logs to gather some information with regards to how the Daikibo Industrials dashboard has been implemented.  </p>
 <p>Utilising IP address 192.168.0.50 as an initial reference point, it is clear that each user must log into the dashboard with authorised credentials, which then allows them access to the dashboard. I can observe the primary <strong>GET</strong> request, with the status assigned as <strong>401 (UNAUTHORIZED)</strong>, however, once the correct credentials have been provided, the user successfully logs in. This is denoted by the new <strong>200 (SUCCESS)</strong> status.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte1.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte1.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>Once the user has logged in using their credentials, I notice that they are assigned an authorised user ID. For IP <strong>192.168.0.50</strong>, this user ID is <code>5Eckr4DTaLLDaDMGqmMJ3g</code>. </p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte2.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte2.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>This user, now authorised, can access the dashboard and make API requests to the status of their manufacturing plants.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte3.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte3.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>Exploring the networking elements further, I notice that all IP addresses begin with the same internal subnet structure: <strong>192.168.0.x</strong>. This structure is important to note, as these IP addresses would only be assigned to devices that are directly connected to the internal network (the call is coming from inside the house! ☎️). This heavily suggests that in order to gain access to the dashboard, the threat actor must already be within the internal network. Due to this, it is not possible for the threat actor to have accessed the dashboard directly from the Internet.</p>
@@ -228,23 +228,23 @@
 • <code>Visual Studio Code</code>  </p>
 <p>When scrolling through the log file using Visual Studio Code, I noticed in the right-hand side overview panel, there is a section with many requests that seems unusual for the typical pattern of behaviour from Daikibo employees. </p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte4.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte4.png" alt="Log Analysis" style="width: 100%; max-width: 100px; height: auto;">
 </div>
 
 <p>When examining the pattern of behaviour from a regular employee, it is evident that each user typically logs in using their credentials, subsequently being assigned an authorised ID. They then access the dashboard and execute multiple API calls to obtain the status of specific machines or plants. In the below example, we can see that IP address <strong>192.168.0.38</strong> logs in, and obtains the user ID <strong>irHRppZK35peUiTjxPuCdL</strong>. This user then requests the status of the Seiko plant, and the Laser Welder machine at the Seiko plant. This is the last request from this user.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte5.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte5.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>Analysing another, longer log, a similar patterns is observed.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte6.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte6.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>In this example, <strong>192.168.0.25</strong> logs in with their credentials, obtaining the user ID <strong>bqZd59gNjgDxywqXFEtjT6</strong>. This user makes multiple API requests to the dashboard, requesting the status of the Seiko plant and machines at this plant. This user returns at 9:03:55AM on the 27th, and is required to log-in again, as their credentials have now expired. Once this is validated, the user then proceeds to make more API requests on more machines at the Meiyo plant.</p>
 <p>This makes the long requests in the overview panel seem quite suspicious. Inspecting these logs further, I can see that there are a total of <strong>69</strong> unauthorised API requests made from IP address <strong>192.168.0.101</strong>.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte7.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte7.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>This confirms the presence of suspicious user requests, and despite the users log-in credentials expiring at exactly 12:00AM on <strong>June 26th, 2021</strong>, the user was still able to make API requests.</p>
@@ -254,19 +254,19 @@
 • <code>Visual Studio Code</code>  </p>
 <p>When analysing logs for automated requests, I often find the timestamps of the logs to be the most telling. Using this approach, it is clear that for each of the four plants owned by Daikibo, an API request was made for the status of each, every hour, on the hour from the IP address <strong>192.168.0.101</strong>.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte8.png" alt="Log Analysis" style="width: 600px;">
+  <img src="../../posts/images/deloitte8.png" alt="Log Analysis" style="width: 100%; max-width: 600px; height: auto;">
 </div>
 
 <p>At exactly <strong>0x:00:48</strong>, an API request is made at all four Daikibo plants which continues until the threat actor logs in again at <strong>4:04PM</strong> on <strong>June 26th, 2021</strong>. </p>
 <p>This behaviour implies clear automation, as it is highly unlikely that a person would be making these requests, every hour at each plant to the millisecond. This implies that the threat actor was able to gain access to legitimate credentials, perhaps through phishing or a disgruntled employee, and set up an automated script to scrape status information from Daikibo's plants.  </p>
 <p>At <strong>4:04PM</strong>, the threat actor notices that they are making unauthorised requests, and logs in again which succeeds.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte9.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte9.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>Once logged in again, the script proceeds to make successful API requests every hour, until <strong>9:00PM</strong> on <strong>June 26th, 2021</strong>, where the logs end.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte10.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte10.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <p>By analysing the timestamps of each of the requests from <strong>June 25th</strong> to the <strong>26th</strong>, I was able to observe repeat, uniform requests made from the same IP address. This, in conjunction with the requests changing to unauthorised when the log-in credentials expired, imply that the threat actor was running a script in the background. It wasn't until <strong>4:04PM</strong> on the <strong>26th</strong> that the threat actor realised their requests were not successful, thus prompting them to login a second time where the script then makes more API requests until the logs end.</p>
@@ -276,7 +276,7 @@
 • <code>Visual Studio Code</code>  </p>
 <p>Due to the formatting of the loggs provided by the client, I can view each user ID assigned to each IP address. In this case, the ID assigned to <strong>192.168.0.101</strong> is <strong>mdB7yD2dp1BFZPontHBQ1Z</strong>.</p>
 <div style="text-align: center;">
-  <img src="../../posts/images/deloitte11.png" alt="Log Analysis">
+  <img src="../../posts/images/deloitte11.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
 </div>
 
 <h3 id="6-conclusion">6. Conclusion</h3>
