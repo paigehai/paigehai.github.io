@@ -72,10 +72,13 @@ hr {
 
 /* Add image borders*/
 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(91, 71, 143, 0.15);
-  /slight rounding for smoother edges */
-  border-radius: 12px;
   transition: box-shadow 0.3s ease;
 }
 
