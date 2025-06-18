@@ -2,12 +2,20 @@ Hi! I’m Paige — a High-Distinction Cyber Security student at Deakin Universi
 
 ---
 
+<div style="text-align: center; margin-top: 2.5rem;">
+  <img src="../images/github.png" alt="GitHub Posts Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
 #### GitHub Projects  
 Explore my personal and university projects in cybersecurity, web development, and machine learning. Each project showcases practical skills and applied knowledge across different domains of tech.
 
 👉 [View GitHub Projects](../github.md)
 
 ---
+
+<div style="text-align: center; margin-top: 2.5rem;">
+  <img src="../images/blog-posts.png" alt="Blog Posts Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
 
 #### Blog
 Experience the intersection of technical theory and art in computer science. This publication aims to recount the learning journey of a Cyber Security student.
@@ -16,6 +24,10 @@ Experience the intersection of technical theory and art in computer science. Thi
 
 ---
 
+<div style="text-align: center; margin-top: 2.5rem;">
+  <img src="../images/academia.png" alt="Academia Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
 #### Academia
 Explore my academic background, university grades, and involvement in student cybersecurity leadership.
 
@@ -23,12 +35,20 @@ Explore my academic background, university grades, and involvement in student cy
 
 ---
 
+<div style="text-align: center; margin-top: 2.5rem;">
+  <img src="../images/teaching.png" alt="Teaching Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
 #### Teaching
 I’m an Associate Teaching Fellow for SIT111: Computer Systems at Deakin University. I support students in understanding core computing concepts and create educational videos to simplify difficult topics.
 
 👉 [View Teaching Work](../teaching.md)
 
 ---
+
+<div style="text-align: center; margin-top: 2.5rem;">
+  <img src="../images/design-social-media.png" alt="Social Media Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
 
 #### Design and Social Media Work
 View my graphic design, 3D modelling, and UX/UI work.
