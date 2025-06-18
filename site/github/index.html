@@ -184,6 +184,9 @@
             
         </header>
         <p><p>Over the years, I have found a passion for creating and developing programs in fields such as data analytics, gaming, and analysis. These projects have allowed me to expand my understanding of my coursework.</p>
+<div style="text-align: center;">
+  <img src="../images/bss.jpeg" alt="Women in Security Nomination" style="width: 100%; max-width: 600px; height: auto; border-radius: 12px;">
+</div>
 <ul>
 <li>
 <p><a href="https://github.com/paigehai/ml-optimisation"><strong>Project 1:</strong> Machine Learning Optimisation Analysis</a><br />
@@ -282,34 +285,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/turndown/dist/turndown.min.js"></script>
-
-<script>
-function downloadMarkdown() {
-  const turndownService = new TurndownService();
-
-  // Select main content area; adjust selector to fit your site structure
-  const mainContent = document.querySelector('main') || document.body;
-
-  if (!mainContent) {
-    alert('No content found to convert to Markdown.');
-    return;
-  }
-
-  const markdown = turndownService.turndown(mainContent.innerHTML);
-
-  const blob = new Blob([markdown], { type: 'text/markdown' });
-  const url = URL.createObjectURL(blob);
-
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = document.title.replace(/\s+/g, '_').toLowerCase() + '.md';
-  a.click();
-
-  URL.revokeObjectURL(url);
-}
 </script>
 
             
