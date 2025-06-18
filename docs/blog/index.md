@@ -3,7 +3,7 @@ Welcome to my blog! Here you'll find a collection of posts exploring topics from
 ###### [A Cheat Sheet on How to Create Your Own GitHub Pages Portfolio](posts/create-your-portfolio.md)
 *June 17, 2025*  
   
-A quick cheat sheet for those who are interested in putting their development skills to the test. This cheat sheet provides the preliminary steps in setting up and deploying a GitHub Pages portfolio that you can use to show off your work.
+A quick cheat sheet for those who are interested in putting their development skills to the test. This cheat sheet provides the preliminary steps in setting up and deploying a GitHub Pages portfolio that you can use to show off your work.  
 *Portfolio creation, cyber portfolio, and web development.*
 
 
