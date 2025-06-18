@@ -2,6 +2,10 @@
 title: "Deloitte Cyber Job Simulation Write Up"
 ---
 
+<div style="text-align: center;">
+  <img src="/images/deloitte-thumb.png" alt="Deloitte Cyber Write Up Thumbnail" style="max-width: 500px">
+</div>  
+
 *June 13, 2025*
 
 *This write-up is part of my ongoing write-up series, exploring cybersecurity challenges, and threat intelligence practices utilised in the day-to-day operations of a threat analyst.*

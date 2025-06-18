@@ -2,6 +2,10 @@
 title: "Problems of Employee Security Insensibility"
 ---
 
+<div style="text-align: center;">
+  <img src="/images/sensibility-thumb.png" alt="Employee Security Sensibility Thumbnail" style="max-width: 500px">
+</div>  
+
 *July 02, 2024*
 
 *Lessons learned in human error.*

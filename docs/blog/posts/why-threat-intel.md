@@ -2,6 +2,10 @@
 title: "Why I’m Pursuing Threat Intelligence"
 ---
 
+<div style="text-align: center;">
+  <img src="/images/threatintel-thumb.png" alt="Threat Intelligence Thumbnail" style="max-width: 500px">
+</div> 
+
 *June 12, 2025*
 
 Throughout my life, both early and late (I'm only 24), writing has been my constant. During high school, I heavily immersed myself in English and Literature, where I found my deep appreciation for language, structure, and the art of conveying complex ideas with clarity. Reflecting on my academic success during this period further affirmed my natural inclination toward written communication and analysis. 

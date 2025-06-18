@@ -2,6 +2,10 @@
 title: "A Cheat Sheet on How to Create Your Own GitHub Pages Portfolio"
 ---
 
+<div style="text-align: center;">
+  <img src="/images/github-thumb.png" alt="GitHub Pages Thumbnail" style="max-width: 500px">
+</div>  
+
 *June 17, 2025*
 
 After a close friend of mine had introduced me to GitHub pages through her own portfolio (shout out to you, [Brianna](https://briannalaird.com)!), I quickly became hooked on the idea of creating my own portfolio from scratch! Taking note of my walkthrough in making my portfolio was both for my own reference, and so I am able to guide others on how to create their own portfolio's. What good is knowledge if you cannot share it!
