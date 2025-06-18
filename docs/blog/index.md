@@ -1,7 +1,7 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
 <div style="text-align: center; margin-top: 2.5rem;">
-  <img src="../images/github-thumb.png" alt="GitHub Pages Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
+  <img src="../images/github-thumb.png" alt="GitHub Pages Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
 </div>  
 
 ###### [A Cheat Sheet on How to Create Your Own GitHub Pages Portfolio](posts/create-your-portfolio.md)
