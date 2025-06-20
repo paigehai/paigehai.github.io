@@ -119,30 +119,30 @@ pre {
   position: relative; /* for button positioning */
   background: rgba(211, 203, 255, 0.36) !important;
   border: 1px solid rgb(23, 60, 182) !important;
-  color: #201351 !important;
+  color: #173CB6 !important;
   border-radius: 12px !important;
   font-family: "Fira Mono", monospace !important;
   padding: 1.2rem 1.5rem !important;
   overflow-x: auto !important;
   backdrop-filter: blur(12px);
-  box-shadow: 0 8px 24px rgba(91, 71, 143, 0.15);
+  box-shadow: 0 4px 12px rgba(91, 71, 143, 0.08);
   transition: box-shadow 0.3s ease;
 }
 
 
 /* Add subtle lift on hover */
 pre:hover {
-  box-shadow: 0 12px 32px rgba(91, 71, 143, 0.4);
+  box-shadow: 0 4px 12px rgba(91, 71, 143, 0.4);
 }
 
 /* Inline code with glassy style */
 code {
   background: rgba(243, 232, 255, 0.4) !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border: 1px solid rgb(23, 60, 182) !important;
+  color: #173CB6 !important;
   border-radius: 6px !important;
   padding: 0.25em 0.5em !important;
   font-family: "Fira Mono", monospace !important;
-  color: #201351 !important;
   backdrop-filter: blur(8px);
   text-shadow: none !important;
 }

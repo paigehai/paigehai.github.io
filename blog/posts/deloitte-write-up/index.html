@@ -70,6 +70,17 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Blog]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../" class="dropdown-item text-decoration-none ">All Posts</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="
                             nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Projects]</a>
                             <ul class="dropdown-menu">
                                     <!-- block dropdown-menu -->
@@ -79,39 +90,12 @@
 <!-- endblock -->
                                     <!-- block dropdown-menu -->
     <li>
-        <a class="dropdown-item text-decoration-none" href="#">Design & Social Portfolio &raquo;</a>
-        <ul class="submenu dropdown-menu">
-                <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../design/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../projectsoverview/design/copywriting/" class="dropdown-item text-decoration-none ">Copywriting Portfolio</a>
-    </li>
-<!-- endblock -->
-                <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../projectsoverview/design/girlbyte/" class="dropdown-item text-decoration-none ">GirlByte Website Design</a>
-    </li>
-<!-- endblock -->
-                <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../projectsoverview/design/thumbnails/" class="dropdown-item text-decoration-none ">YouTube Thumbnail Designs</a>
-    </li>
-<!-- endblock -->
-                <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../projectsoverview/design/portfolio/" class="dropdown-item text-decoration-none ">Portfolio Version 1.0</a>
-    </li>
-<!-- endblock -->
-        </ul>
+        <a href="../../../github/" class="dropdown-item text-decoration-none ">GitHub Projects</a>
     </li>
 <!-- endblock -->
                                     <!-- block dropdown-menu -->
     <li>
-        <a href="../../../github/" class="dropdown-item text-decoration-none ">GitHub Projects</a>
+        <a href="../../../design/" class="dropdown-item text-decoration-none ">Design & Social Portfolio</a>
     </li>
 <!-- endblock -->
                             </ul>
@@ -126,11 +110,11 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Blog]</a>
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Guides]</a>
                             <ul class="dropdown-menu">
                                     <!-- block dropdown-menu -->
     <li>
-        <a href="../../" class="dropdown-item text-decoration-none ">All Posts</a>
+        <a href="../create-your-portfolio/" class="dropdown-item text-decoration-none ">GitHub Pages Guide</a>
     </li>
 <!-- endblock -->
                             </ul>
@@ -193,14 +177,14 @@
 <p>A major news publication has revealed sensitive private information about Daikibo Industrials, our client. A production problem has caused its assembly lines to stop, threatening the smooth operation of supply chains relying on Daikibo’s products. The client suspects the security of their new status board may have been breached.</p>
 <h4 id="11-scope">1.1 Scope</h4>
 <p>This investigation will aim to answer the following questions:<br />
-<strong>•</strong> Is there a way for a hacker to access Daikibo's manufacturing status dashboard directly from the internet?<br />
-<strong>•</strong> Are there any suspicious requests or long sequences of user requests?<br />
-<strong>•</strong> What are the indicators of automated requests?<br />
-<strong>•</strong> What is the ID of the user that is making the suspicious requests?  </p>
+• Is there a way for a hacker to access Daikibo's manufacturing status dashboard directly from the internet?<br />
+• Are there any suspicious requests or long sequences of user requests?<br />
+• What are the indicators of automated requests?<br />
+• What is the ID of the user that is making the suspicious requests?  </p>
 <h3 id="2-is-there-a-way-for-a-hacker-to-access-daikibos-manufacturing-status-dashboard-directly-from-the-internet">2. Is there a way for a hacker to access Daikibo's manufacturing status dashboard directly from the internet?</h3>
 <h4 id="tools-used">Tools Used</h4>
-<p>• <code>web_activity.log</code>: a log file containing data pertaining to the alleged breach.<br />
-• <code>Visual Studio Code</code>: an IDE to assist in analysing the log file</p>
+<p>• <strong>web_activity.log</strong>: a log file containing data pertaining to the alleged breach.<br />
+• <strong>Visual Studio Code</strong>: an IDE to assist in analysing the log file</p>
 <p>To answer this question, it was important to begin analysing the activity within the logs to gather some information with regards to how the Daikibo Industrials dashboard has been implemented.  </p>
 <p>Utilising IP address 192.168.0.50 as an initial reference point, it is clear that each user must log into the dashboard with authorised credentials, which then allows them access to the dashboard. I can observe the primary <strong>GET</strong> request, with the status assigned as <strong>401 (UNAUTHORIZED)</strong>, however, once the correct credentials have been provided, the user successfully logs in. This is denoted by the new <strong>200 (SUCCESS)</strong> status.</p>
 <div style="text-align: center;">
@@ -224,8 +208,8 @@
 <p>These findings help support my hypothesis that the threat actor did not access Daikibo's dashboard from the Internet, but rather from the internal network (perhaps a disgruntled insider, or phishing? 👀). As such, this answers the first question in the investigation.</p>
 <h3 id="3-are-there-any-suspicious-requests-or-long-sequences-of-user-requests">3. Are there any suspicious requests or long sequences of user requests?</h3>
 <h4 id="tools-used_1">Tools Used</h4>
-<p>• <code>web_activity.log</code><br />
-• <code>Visual Studio Code</code>  </p>
+<p>• <strong>web_activity.log</strong><br />
+• <strong>Visual Studio Code</strong>  </p>
 <p>When scrolling through the log file using Visual Studio Code, I noticed in the right-hand side overview panel, there is a section with many requests that seems unusual for the typical pattern of behaviour from Daikibo employees. </p>
 <div style="text-align: center;">
   <img src="../../posts/images/deloitte4.png" alt="Log Analysis" style="width: 100%; max-width: 100px; height: auto;">
@@ -250,8 +234,8 @@
 <p>This confirms the presence of suspicious user requests, and despite the users log-in credentials expiring at exactly 12:00AM on <strong>June 26th, 2021</strong>, the user was still able to make API requests.</p>
 <h3 id="4-what-are-the-indicators-of-automated-requests">4. What are the indicators of automated requests?</h3>
 <h4 id="tools-used_2">Tools Used</h4>
-<p>• <code>web_activity.log</code><br />
-• <code>Visual Studio Code</code>  </p>
+<p>• <strong>web_activity.log</strong><br />
+• <strong>Visual Studio Code</strong>  </p>
 <p>When analysing logs for automated requests, I often find the timestamps of the logs to be the most telling. Using this approach, it is clear that for each of the four plants owned by Daikibo, an API request was made for the status of each, every hour, on the hour from the IP address <strong>192.168.0.101</strong>.</p>
 <div style="text-align: center;">
   <img src="../../posts/images/deloitte8.png" alt="Log Analysis" style="width: 100%; max-width: 600px; height: auto;">
@@ -272,8 +256,8 @@
 <p>By analysing the timestamps of each of the requests from <strong>June 25th</strong> to the <strong>26th</strong>, I was able to observe repeat, uniform requests made from the same IP address. This, in conjunction with the requests changing to unauthorised when the log-in credentials expired, imply that the threat actor was running a script in the background. It wasn't until <strong>4:04PM</strong> on the <strong>26th</strong> that the threat actor realised their requests were not successful, thus prompting them to login a second time where the script then makes more API requests until the logs end.</p>
 <h3 id="5-what-is-the-id-of-the-user-that-is-making-the-suspicious-requests">5. What is the ID of the user that is making the suspicious requests?</h3>
 <h4 id="tools-used_3">Tools Used</h4>
-<p>• <code>web_activity.log</code><br />
-• <code>Visual Studio Code</code>  </p>
+<p>• <strong>web_activity.log</strong><br />
+• <strong>Visual Studio Code</strong>  </p>
 <p>Due to the formatting of the loggs provided by the client, I can view each user ID assigned to each IP address. In this case, the ID assigned to <strong>192.168.0.101</strong> is <strong>mdB7yD2dp1BFZPontHBQ1Z</strong>.</p>
 <div style="text-align: center;">
   <img src="../../posts/images/deloitte11.png" alt="Log Analysis" style="width: 100%; max-width: 1000px; height: auto;">
