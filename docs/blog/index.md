@@ -5,9 +5,9 @@ Welcome to my blog! Here you'll find a collection of posts exploring topics from
 </div>  
 
 ###### [Moniker Link (CVE-2024-21413) Exploit Write-Up](posts/moniker-link-writeup.md)
-*June 17, 2025*  
+*June 20, 2025*
   
-This writeup demonstrates how to exploit the Moniker Link vulnerability responsible for RCE and credential leak vulnerabilities.
+This writeup demonstrates how to exploit the Moniker Link vulnerability responsible for RCE and credential leak vulnerabilities.  
 *Investigations, virtual machines, and vulnerability exploitation.*
 
 ---  
