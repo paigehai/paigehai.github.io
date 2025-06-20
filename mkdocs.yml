@@ -31,16 +31,13 @@ extra_javascript:
 
 nav:
   - Hi, I'm Paige! 👋: index.md
-  - Projects:
-      - All Projects: projectsoverview/index.md
-      - Design & Social Portfolio:
-          - Overview: design.md
-          - Copywriting Portfolio: projectsoverview/design/copywriting.md
-          - GirlByte Website Design: projectsoverview/design/girlbyte.md
-          - YouTube Thumbnail Designs: projectsoverview/design/thumbnails.md
-          - Portfolio Version 1.0: projectsoverview/design/portfolio.md
-      - GitHub Projects: github.md
-  - Teaching: teaching.md
-  - Academia: academia.md
   - Blog:
       - All Posts: blog/index.md
+  - Projects:
+      - All Projects: projectsoverview/index.md
+      - GitHub Projects: github.md
+      - Design & Social Portfolio: design.md
+  - Teaching: teaching.md
+  - Academia: academia.md
+  - Guides:
+      - GitHub Pages Guide: blog/posts/create-your-portfolio.md

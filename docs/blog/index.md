@@ -1,5 +1,17 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
+<div style="text-align: center;">
+  <img src="../images/moniker-thumb.png" alt="Moniker Link Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
+###### [Moniker Link (CVE-2024-21413) Exploit Write-Up](posts/moniker-link-writeup.md)
+*June 17, 2025*  
+  
+This writeup demonstrates how to exploit the Moniker Link vulnerability responsible for RCE and credential leak vulnerabilities.
+*Investigations, virtual machines, and vulnerability exploitation.*
+
+---  
+
 <div style="text-align: center; margin-top: 2.5rem;">
   <img src="../images/github-thumb.png" alt="GitHub Pages Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
 </div>  

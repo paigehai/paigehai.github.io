@@ -15,16 +15,16 @@ A major news publication has revealed sensitive private information about Daikib
 
 #### 1.1 Scope
 This investigation will aim to answer the following questions:  
-**•** Is there a way for a hacker to access Daikibo's manufacturing status dashboard directly from the internet?  
-**•** Are there any suspicious requests or long sequences of user requests?  
-**•** What are the indicators of automated requests?  
-**•** What is the ID of the user that is making the suspicious requests?  
+• Is there a way for a hacker to access Daikibo's manufacturing status dashboard directly from the internet?  
+• Are there any suspicious requests or long sequences of user requests?  
+• What are the indicators of automated requests?  
+• What is the ID of the user that is making the suspicious requests?  
 
 
 ### 2. Is there a way for a hacker to access Daikibo's manufacturing status dashboard directly from the internet?
 #### Tools Used
-• `web_activity.log`: a log file containing data pertaining to the alleged breach.  
-• `Visual Studio Code`: an IDE to assist in analysing the log file
+• **web_activity.log**: a log file containing data pertaining to the alleged breach.  
+• **Visual Studio Code**: an IDE to assist in analysing the log file
   
 To answer this question, it was important to begin analysing the activity within the logs to gather some information with regards to how the Daikibo Industrials dashboard has been implemented.  
   
@@ -55,8 +55,8 @@ These findings help support my hypothesis that the threat actor did not access D
 
 ### 3. Are there any suspicious requests or long sequences of user requests?  
 #### Tools Used
-• `web_activity.log`  
-• `Visual Studio Code`  
+• **web_activity.log**  
+• **Visual Studio Code**  
 
 When scrolling through the log file using Visual Studio Code, I noticed in the right-hand side overview panel, there is a section with many requests that seems unusual for the typical pattern of behaviour from Daikibo employees. 
 
@@ -88,8 +88,8 @@ This confirms the presence of suspicious user requests, and despite the users lo
 
 ### 4. What are the indicators of automated requests?    
 #### Tools Used
-• `web_activity.log`  
-• `Visual Studio Code`  
+• **web_activity.log**  
+• **Visual Studio Code**  
 
 When analysing logs for automated requests, I often find the timestamps of the logs to be the most telling. Using this approach, it is clear that for each of the four plants owned by Daikibo, an API request was made for the status of each, every hour, on the hour from the IP address **192.168.0.101**.
 
@@ -117,8 +117,8 @@ By analysing the timestamps of each of the requests from **June 25th** to the **
 
 ### 5. What is the ID of the user that is making the suspicious requests?  
 #### Tools Used
-• `web_activity.log`  
-• `Visual Studio Code`  
+• **web_activity.log**  
+• **Visual Studio Code**  
 
 Due to the formatting of the loggs provided by the client, I can view each user ID assigned to each IP address. In this case, the ID assigned to **192.168.0.101** is **mdB7yD2dp1BFZPontHBQ1Z**.
 
