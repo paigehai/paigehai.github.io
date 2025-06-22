@@ -189,6 +189,7 @@ These can be combined to create unique and powerful password transformations.
 
 ##### 3: Defining Character Sets
 Modifiers are followed by character sets, placed inside square brackets, and enclosed in double quotes. These define the characters that will be used in the transformation. Some include:
+
 * `[0-9]` all digits from 0 to 9
 * `[0]` the digit 0 only
 * `[A-Z]` uppercase letters only

@@ -206,7 +206,153 @@ nano ~/.bashrc</code></pre>
 <pre class="highlight"><code>source ~/.bashrc</code></pre></p>
 <p>To verify your installation, run the command:
 <pre class="highlight"><code>john --help</code></pre></p>
-<p>You should see John the Ripper's help output, which confirms it has been installed correctly. </p></p>
+<p>You should see John the Ripper's help output, which confirms it has been installed correctly.</p>
+<div style="text-align: center;">
+  <img src="../images/jtr1.png" alt="John the Ripper" style="width: 100%; max-width: 700px; height: auto;">
+</div>
+
+<h4 id="john-the-ripper-commands">John the Ripper Commands</h4>
+<p>John the Ripper has quite basic syntax in terms of its commands, and I will aim to cover the specific options and modifiers.</p>
+<ul>
+<li><code>john</code>: this invokes the John the ripper tool</li>
+<li><code>[options]</code>: where we specify the options we are wanting to use</li>
+<li><code>[file path]</code>: this is the file that contains the hash you are trying to crack, if the file is in the same directly, then just denote the file name.</li>
+</ul>
+<p>John the Ripper has features that are built-in to detect the type of hash given. From this, the tool is able to apply rules and formats to crack the hash! </p>
+<p>For hashes that you are unable to identify, this can be a great option, however, it can be unreliable. </p>
+<p>An example of this command:
+<pre class="highlight"><code>john [options] [file path]</code></pre></p>
+<h4 id="wordlists">Wordlists</h4>
+<p>When cracking hashes, you will likely use wordlists to crack the hashes in your experiments. I will introduce the following options that will help us refine our final command.</p>
+<ul>
+<li><code>--wordlist=</code>: defines the wordlist to be used to crack the hash</li>
+<li><code>[path to wordlist]</code>: the path to the wordlist</li>
+</ul>
+<p>Wordlists can help us reduce the time needed to crack a hash, as we are providing a curated list of likely passwords or phrases for John the Ripper to try directly. Rather than a brute-force attack, John the Ripper will cycle through the wordlist.</p>
+<p>To use a wordlist, the command will often be as follows:
+<pre class="highlight"><code>john --wordlist=[path to wordlist] [path to file]</code></pre></p>
+<p>A wordlist that is often used, is the <strong>rockyou.txt</strong> wordlist, which is a list that was derived from a breach of <strong>rockyou.com</strong>, where millions of user passwords were leaked. These passwords are now available as a wordlist, that you can download from GitHub.</p>
+<pre class="highlight"><code>git clone https://github.com/danielmiessler/SecLists.git</code></pre>
+<p>Then navigate to the correct folder:
+<pre class="highlight"><code>cd SecLists/Passwords/Leaked-Databases/</code></pre></p>
+<p>and extract the file:
+<pre class="highlight"><code>tar xvzf rockyou.txt.tar.gz</code></pre></p>
+<p><strong>Example Usage:</strong>
+<pre class="highlight"><code>john --wordlist=rockyou.txt hash.txt</code></pre></p>
+<p><em>Note</em>: For easier access, you can move the extracted <code>rockyou.txt</code> file to a common wordlist directly like <code>usr/share/wordlists/</code>:
+<pre class="highlight"><code>sudo mv rockyou.txt /usr/share/wordlists/</code></pre></p>
+<p>Then you can refer to it in your commands like so:
+<pre class="highlight"><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
+<h4 id="format-specific-cracking">Format-Specific Cracking</h4>
+<p>If available, you can give a specific format to John the Ripper to use to crack a password using the following syntax:
+<pre class="highlight"><code>john --format=[format] --wordlist=[path to wordlist] [path to file]</code></pre></p>
+<ul>
+<li><code>--format=</code>: the flag to tell John that you are providing a hash of a specific format</li>
+<li><code>[format]</code>: the format of the hash</li>
+</ul>
+<p><strong>Example Usage:</strong>
+<pre class="highlight"><code>john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
+<p>For a full list of the formats that John can utilise, run the command:
+<pre class="highlight"><code>john --list=formats</code></pre></p>
+<h4 id="creating-custom-rules">Creating Custom Rules</h4>
+<p>In John the Ripper, we are able to define rules that can be used to create passwords dynamically. This can extend the way that passwords are guessed. These rules are defined in the <code>john.conf</code> file. </p>
+<p>Based on how John has been installed, the configuration file can be found in:</p>
+<ul>
+<li><code>/home/&lt;user&gt;/john/run</code>: as per the installation guide above</li>
+<li><code>/etc/john/john.conf</code>: if installed via a package manager or built from source, or</li>
+<li><code>/opt/john</code></li>
+</ul>
+<p>Custom rules can be defined under a named section in the aforementioned configuration file. Here is a breakdown of how to define and use them in your investigations:</p>
+<h5 id="1-name-your-rule">1: Name Your Rule</h5>
+<p>Each rule will begin with a section header, like so:
+<pre class="highlight"><code>[List.Rules:MyCustomRule]</code></pre></p>
+<p>This label <code>MyCustomRule</code> will be used when referencing your rule with the argument <code>--rules=</code>, the syntax of which you will now be familiar with.</p>
+<ul>
+<li><code>--rules=</code>: specifies the custom rule that will be used during password cracking</li>
+<li><code>[rule]</code>: the rule label</li>
+</ul>
+<h5 id="2-apply-modifiers">2: Apply Modifiers</h5>
+<p>We can apply a wide range of modifiers to transform the words in the wordlist. Commonly used ones include:</p>
+<ul>
+<li><code>Az</code> append characters to the end of a word</li>
+<li><code>A0</code> prepend characters to the beginning</li>
+<li><code>c</code> capitalise characters positionally (typically the first character)</li>
+</ul>
+<p>These can be combined to create unique and powerful password transformations.</p>
+<h5 id="3-defining-character-sets">3: Defining Character Sets</h5>
+<p>Modifiers are followed by character sets, placed inside square brackets, and enclosed in double quotes. These define the characters that will be used in the transformation. Some include:
+* <code>[0-9]</code> all digits from 0 to 9
+* <code>[0]</code> the digit 0 only
+* <code>[A-Z]</code> uppercase letters only
+* <code>[a-z]</code> lowercase letters only
+* <code>[A-z]</code> all upper and lowercase letters</p>
+<p><strong>Example Usage:</strong>
+* <code>[a]</code> will include the letter 'a' only
+* <code>[!#$%@]</code> specifies symbols <code>!</code>, <code>#</code>, <code>$</code>, <code>%</code>, and <code>@</code></p>
+<h5 id="4-example-rule">4: Example Rule</h5>
+<p>Let's say we wanted to match a password like Paigepassword1!, and we already has paigepassword in the wordlist, we could define our custom rule as follows:
+<pre class="highlight"><code>[List.Rules:PaigePassword]
+cAz"[0-9][!#$%@]"</code></pre></p>
+<p>In this rule:
+* <code>c</code> capitalises the first character (<code>Paigepassword</code>)
+* <code>Az"[0-9][!#$%@]</code> will append a number (0–9), then one of the symbols <code>!#$%@</code></p>
+<h5 id="5-using-custom-rules">5: Using Custom Rules</h5>
+<p>To use this rule in John the Ripper, you would run the following:
+<pre class="highlight"><code>john --wordlist=[path to wordlist] --rules=PaigePassword [path to file]</code></pre></p>
+<h4 id="cracking-zip-files">Cracking Zip Files</h4>
+<p>John the Ripper has a tool called <code>zip2john</code> which converts the Zip file into a hash format that John can understand. Commands are formatted as so:</p>
+<pre class="highlight"><code>zip2john [options] [zip file] &gt; [output file]</code></pre>
+<ul>
+<li><code>[options]</code>: allows us to pass checksum options to <code>zip2john</code>, however, this shouldn't be necessary</li>
+<li><code>[zip file]</code>: the path to the zip file</li>
+<li><code>&gt;</code> redirects the output from the previous command to another file</li>
+<li><code>[output file]</code>: this file will store the output</li>
+</ul>
+<p><strong>Example Usage:</strong>
+<pre class="highlight"><code>zip2john zipfile.zip &gt; hash.txt</code></pre></p>
+<p>Once we have the hash, we are now able to use this file as an input for John the Ripper to crack.
+<pre class="highlight"><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
+<h4 id="cracking-zip-files_1">Cracking Zip Files</h4>
+<p>John the Ripper has a tool called <code>zip2john</code> which converts the Zip file into a hash format that John can understand. Commands are formatted as so:</p>
+<pre class="highlight"><code>zip2john [options] [zip file] &gt; [output file]</code></pre>
+<ul>
+<li><code>[options]</code>: allows us to pass checksum options to <code>zip2john</code>, however, this shouldn't be necessary</li>
+<li><code>[zip file]</code>: the path to the zip file</li>
+<li><code>&gt;</code> redirects the output from the previous command to another file</li>
+<li><code>[output file]</code>: this file will store the output</li>
+</ul>
+<p><strong>Example Usage:</strong>
+<pre class="highlight"><code>zip2john zipfile.zip &gt; hash.txt</code></pre></p>
+<p>Once we have the hash, we are now able to use this file as an input for John the Ripper to crack.
+<pre class="highlight"><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
+<h4 id="cracking-rar-files">Cracking Rar Files</h4>
+<p>John the Ripper has another tool called <code>rar2john</code> which extracts the hash value from a RAR file. The command to do so is:</p>
+<pre class="highlight"><code>rar2john [options] [rar file] &gt; [output file]</code></pre>
+<ul>
+<li><code>[options]</code>: allows us to pass checksum options to <code>rar2john</code>, however, this shouldn't be necessary</li>
+<li><code>[rar file]</code>: the path to the RAR file</li>
+<li><code>&gt;</code> redirects the output from the previous command to another file</li>
+<li><code>[output file]</code>: this file will store the output</li>
+</ul>
+<p><strong>Example Usage:</strong>
+<pre class="highlight"><code>rar2john rarfile.rar &gt; hash.txt</code></pre></p>
+<p>Once the hash has been extracted, we can use this with John the Ripper and a wordlist of your choice:
+<pre class="highlight"><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
+<h4 id="cracking-office-files">Cracking Office Files</h4>
+<p>John the Ripper includes a tool called <code>office2john</code>, which extracts the hash from Microsoft Office documents (e.g., .doc, .docx, .xls, .xlsx) and converts it into a format John can crack.</p>
+<p>The basic command format is:
+<pre class="highlight"><code>office2john [office file] &gt; [output file]</code></pre></p>
+<ul>
+<li><code>[office file]</code>: the path to the Office document</li>
+<li><code>&gt;</code>: redirects the output from the command into a new file</li>
+<li><code>[output file]</code>: the file that will store the extracted hash</li>
+</ul>
+<p><strong>Example Usage:</strong>
+<pre class="highlight"><code>office2john officefile.xlsx &gt; hash.txt</code></pre></p>
+<p>You can now pass the extracted file to John with a wordlist of your choice:
+<pre class="highlight"><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
+<p>This process works with most modern Office file formats, given they are password-protected.</p>
+<p>I hope that this guide has been informative, and you have gained valuable insights into how John the Ripper functions. To test your skills, make sure you try out TryHackMe's <a href="https://tryhackme.com/room/johntheripperbasics">John the Ripper: The Basics</a> room, of which this blog post was inspired by.</p></p>
     </article>
 </section>
 <!-- endblock -->
