@@ -209,6 +209,7 @@ cAz"[0-9][!#$%@]"
 ```
 
 In this rule:
+
 * `c` capitalises the first character (`Paigepassword`)
 * `Az"[0-9][!#$%@]` will append a number (0–9), then one of the symbols `!#$%@`
 
