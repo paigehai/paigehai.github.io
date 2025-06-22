@@ -318,19 +318,6 @@ cAz"[0-9][!#$%@]"</code></pre></p>
 <pre class="highlight"><code>zip2john zipfile.zip &gt; hash.txt</code></pre></p>
 <p>Once we have the hash, we are now able to use this file as an input for John the Ripper to crack.
 <pre class="highlight"><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
-<h4 id="cracking-zip-files_1">Cracking Zip Files</h4>
-<p>John the Ripper has a tool called <code>zip2john</code> which converts the Zip file into a hash format that John can understand. Commands are formatted as so:</p>
-<pre class="highlight"><code>zip2john [options] [zip file] &gt; [output file]</code></pre>
-<ul>
-<li><code>[options]</code>: allows us to pass checksum options to <code>zip2john</code>, however, this shouldn't be necessary</li>
-<li><code>[zip file]</code>: the path to the zip file</li>
-<li><code>&gt;</code> redirects the output from the previous command to another file</li>
-<li><code>[output file]</code>: this file will store the output</li>
-</ul>
-<p><strong>Example Usage:</strong>
-<pre class="highlight"><code>zip2john zipfile.zip &gt; hash.txt</code></pre></p>
-<p>Once we have the hash, we are now able to use this file as an input for John the Ripper to crack.
-<pre class="highlight"><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code></pre></p>
 <h4 id="cracking-rar-files">Cracking Rar Files</h4>
 <p>John the Ripper has another tool called <code>rar2john</code> which extracts the hash value from a RAR file. The command to do so is:</p>
 <pre class="highlight"><code>rar2john [options] [rar file] &gt; [output file]</code></pre>
