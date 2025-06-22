@@ -1,5 +1,13 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
+###### [A Guide to John the Ripper](posts/jtr.md)
+*June 17, 2025*  
+  
+A quick cheat sheet for those who are interested in putting their development skills to the test. This cheat sheet provides the preliminary steps in setting up and deploying a GitHub Pages portfolio that you can use to show off your work.  
+*Portfolio creation, cyber portfolio, and web development.*
+
+---  
+
 <div style="text-align: center;">
   <img src="../images/moniker-thumb.png" alt="Moniker Link Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
 </div>  
