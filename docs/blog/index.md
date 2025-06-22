@@ -4,7 +4,7 @@ Welcome to my blog! Here you'll find a collection of posts exploring topics from
   <img src="../images/john-thumb.png" alt="John the Ripper Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
 </div>  
 
-###### [A Guide to John the Ripper](posts/jtr.md)
+###### [A Guide to John the Ripper](posts/johntheripper.md)
 *June 17, 2025*  
   
 A quick cheat sheet for those who are interested in putting their development skills to the test. This cheat sheet provides the preliminary steps in setting up and deploying a GitHub Pages portfolio that you can use to show off your work.  
