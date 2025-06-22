@@ -1,5 +1,9 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
+<div style="text-align: center;">
+  <img src="../images/john-thumb.png" alt="John the Ripper Thumbnail" style="width: 100%; max-width: 500px; height: auto;">
+</div>  
+
 ###### [A Guide to John the Ripper](posts/jtr.md)
 *June 17, 2025*  
   
