@@ -297,9 +297,11 @@ nano ~/.bashrc</code></pre>
 <p>Let's say we wanted to match a password like Paigepassword1!, and we already has paigepassword in the wordlist, we could define our custom rule as follows:
 <pre class="highlight"><code>[List.Rules:PaigePassword]
 cAz"[0-9][!#$%@]"</code></pre></p>
-<p>In this rule:
-* <code>c</code> capitalises the first character (<code>Paigepassword</code>)
-* <code>Az"[0-9][!#$%@]</code> will append a number (0–9), then one of the symbols <code>!#$%@</code></p>
+<p>In this rule:</p>
+<ul>
+<li><code>c</code> capitalises the first character (<code>Paigepassword</code>)</li>
+<li><code>Az"[0-9][!#$%@]</code> will append a number (0–9), then one of the symbols <code>!#$%@</code></li>
+</ul>
 <h5 id="5-using-custom-rules">5: Using Custom Rules</h5>
 <p>To use this rule in John the Ripper, you would run the following:
 <pre class="highlight"><code>john --wordlist=[path to wordlist] --rules=PaigePassword [path to file]</code></pre></p>
