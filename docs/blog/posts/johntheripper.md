@@ -241,28 +241,6 @@ Once we have the hash, we are now able to use this file as an input for John the
 john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
 
-#### Cracking Zip Files
-John the Ripper has a tool called `zip2john` which converts the Zip file into a hash format that John can understand. Commands are formatted as so:
-
-```
-zip2john [options] [zip file] > [output file]
-```
-
-* `[options]`: allows us to pass checksum options to `zip2john`, however, this shouldn't be necessary
-* `[zip file]`: the path to the zip file
-* `>` redirects the output from the previous command to another file
-* `[output file]`: this file will store the output
-
-**Example Usage:**
-```
-zip2john zipfile.zip > hash.txt
-```
-
-Once we have the hash, we are now able to use this file as an input for John the Ripper to crack.
-```
-john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
-```
-
 #### Cracking Rar Files
 John the Ripper has another tool called `rar2john` which extracts the hash value from a RAR file. The command to do so is:
 
