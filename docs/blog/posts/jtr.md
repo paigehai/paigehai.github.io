@@ -197,6 +197,7 @@ Modifiers are followed by character sets, placed inside square brackets, and enc
 * `[A-z]` all upper and lowercase letters
 
 **Example Usage:**
+
 * `[a]` will include the letter 'a' only
 * `[!#$%@]` specifies symbols `!`, `#`, `$`, `%`, and `@`
 
