@@ -1,11 +1,23 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
 <div style="text-align: center;">
+  <img src="../images/anz-thumb.png" alt="ANZ Job Simulation Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
+###### [ANZ Cyber Security Management Job Simulation Write Up](posts/anzcybermanagement.md)
+*June 25, 2025*  
+  
+Completed a cybersecurity simulation with ANZ, identifying threats through packet capture investigation using open-source tools.  
+*Threat detection, network traffic analysis, and digital forensics.*
+
+---  
+
+<div style="text-align: center;">
   <img src="../images/john-thumb.png" alt="John the Ripper Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
 </div>  
 
 ###### [A Guide to John the Ripper](posts/johntheripper.md)
-*June 17, 2025*  
+*June 21, 2025*  
   
 A quick cheat sheet for those who are interested in putting their development skills to the test. This cheat sheet provides the preliminary steps in setting up and deploying a GitHub Pages portfolio that you can use to show off your work.  
 *Portfolio creation, cyber portfolio, and web development.*
