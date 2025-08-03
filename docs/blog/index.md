@@ -1,6 +1,18 @@
 Welcome to my blog! Here you'll find a collection of posts exploring topics from cybersecurity and malware analysis to reflections on learning and creativity.
 
 <div style="text-align: center;">
+  <img src="../images/opportunities-thumb.png" alt="Job Opportunities Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
+</div>  
+
+###### [How to Turn Academic Success into Career Opportunities](posts/careeropportunities.md)
+*June 29, 2025*  
+  
+Built industry readiness as a high-achieving IT student by actively engaging in conferences, university clubs, and tech communities. Learn how to develop skills in networking, project-based learning, and personal branding through GitHub and LinkedIn.  
+*Career preparation, community engagement, and professional development.*
+
+---  
+
+<div style="text-align: center;">
   <img src="../images/anz-thumb.png" alt="ANZ Job Simulation Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
 </div>  
 
