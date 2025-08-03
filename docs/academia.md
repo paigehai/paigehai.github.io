@@ -10,6 +10,9 @@ I am a **High-Distinction student** currently studying at Deakin University, wit
 | SIT192    | Discrete Mathematics                               | High Distinction (HD) | 90   |
 | SIT223    | Professional Practice in IT                        | High Distinction (HD) | 100  |
 | SIT232    | Object-Oriented Development                        | High Distinction (HD) | 95   |
+| SIT384    | Cyber Security Analytics                       | High Distinction (HD) | 93   |
+| SIT282    | Digital Forensics and Investigations                        | High Distinction (HD) | 97   |
+| SIT202    | Computer Networks and Communication                       | High Distinction (HD) | 97   |
 
 #### Extracurricular Involvement
 
