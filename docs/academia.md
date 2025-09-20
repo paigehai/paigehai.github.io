@@ -1,4 +1,4 @@
-I am a **High-Distinction student** currently studying at Deakin University, with a **Weighted Average Mark (WAM) of 82.1**. My academic performance reflects a strong commitment to both theoretical knowledge and practical application, particularly in areas related to programming, mathematics, and cybersecurity.
+I am a **High-Distinction student** currently studying at Deakin University, with a **Weighted Average Mark (WAM) of 86.1**. My academic performance reflects a strong commitment to both theoretical knowledge and practical application, particularly in areas related to programming, mathematics, and cybersecurity.
 
 #### Academic Results
 
@@ -6,10 +6,14 @@ I am a **High-Distinction student** currently studying at Deakin University, wit
 |-----------|----------------------------------------------------|--------|------|
 | SIT102    | Introduction to Programming                        | Distinction (D) | 75   |
 | SIT111    | Computer Systems                                   | Distinction (D) | 70   |
-| SIT182    | Real World Practices for Cyber Security            | High Distinction (HD) | 91   |
+| SIT182    | Real World Practices for Cyber Security           | High Distinction (HD) | 91   |
 | SIT192    | Discrete Mathematics                               | High Distinction (HD) | 90   |
 | SIT223    | Professional Practice in IT                        | High Distinction (HD) | 100  |
 | SIT232    | Object-Oriented Development                        | High Distinction (HD) | 95   |
+| SIT282    | Computer Forensics                                 | High Distinction (HD) | 97   |
+| SIT202    | Computer Networks                                  | High Distinction (HD) | 97   |
+| SIT384    | Cyber Security Analytics                            | High Distinction (HD) | 97   |
+
 
 #### Extracurricular Involvement
 
