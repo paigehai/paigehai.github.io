@@ -24,7 +24,7 @@ In this moment, Gojo realises something is wrong. He can sense the deception, ye
 
 Kenjaku's deception mirrors one of the most powerful tools in cyber security. Like Kenjaku exploiting Gojo's trust, threat actors manipulate human behaviour to bypass even the strongest systems. Social engineering is the art of influencing people to gain an advantage, convincing someone to reveal sensitive information, grant access, or take actions that compromise security. Unlike malware or hacking tools it targets people, not systems.
 
-Its effectiveness comes from exploiting trust, authority, urgency, and emotion. A carefully crafted email can mimic a CEO, a phone call can elicit credentials, and a sense of emergency can make even cautious individuals act without thought. Just as Kenjaku weaponises the familiarity of Geto's face, voice, and presence attackers leverage familiarity and confidence to manipulate targets.
+Its effectiveness comes from exploiting trust, authority, urgency, and emotion. A carefully crafted email can mimic a CEO, a phone call can elicit credentials, and a sense of emergency can make even cautious individuals act without thought. Just as Kenjaku weaponises the familiarity of Geto's face, voice, and presence threat actors leverage familiarity and confidence to manipulate targets.
 
 Kenjaku exemplifies social engineering at its most sophisticated. He does not rely on brute force. He exploits trust, familiarity, and perception. By perfectly impersonating Geto, he creates hesitation and doubt even in Gojo, one of the strongest sorcerers alive. This mirrors real-world impersonation attacks such as CEO fraud, spear phishing, and pretexting where threat actors mimic trusted figures to manipulate targets into actions they normally would not take.
 
@@ -34,7 +34,7 @@ Kenjaku exemplifies social engineering at its most sophisticated. He does not re
 
 The consequences of his manipulation extend beyond individual hesitation. Characters like Itadori, Megumi, Yuta, and Kugisaki are forced to adapt in real-time, stepping into roles for which they may not be fully prepared. The cascading effect destabilises the entire Jujutsu ecosystem showing how the compromise of a single pivotal figure can compromise a network of support.
 
-This mirrors cyber security realities. Many organisations have crown jewels, critical systems or key personnel whose compromise introduces evolving attacks. When attackers manipulate high-trust individuals or breach central systems, they gain unprecedented leverage. The psychological impact amplifies the technical damage. Hesitation, confusion, and reduced morale make further attacks more likely.
+This mirrors cyber security realities. Many organisations have crown jewels, critical systems or key personnel whose compromise introduces evolving attacks. When threat actors manipulate high-trust individuals or breach central systems, they gain unprecedented leverage. The psychological impact amplifies the technical damage. Hesitation, confusion, and reduced morale make further attacks more likely.
 
 <div style="text-align: center;">
   <img src="../../posts/images/jjk4.png" alt="Dream Team" style="width: 100%; max-width: 600px; height: auto;">
