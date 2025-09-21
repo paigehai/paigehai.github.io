@@ -8,7 +8,7 @@ Welcome to my blog! Here you'll find a collection of posts exploring topics from
 *Sept 21, 2025*  
 
 Bridging anime storytelling and cyber security concepts by analysing how Kenjaku’s impersonation and manipulation mirror real-world social engineering attacks.
-*Psychological manipulation, human vulnerability, and security awareness.*
+*Psychological manipulation, human vulnerability, and security awareness.* 
 
 ---  
 
