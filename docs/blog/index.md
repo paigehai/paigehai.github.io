@@ -4,7 +4,7 @@ Welcome to my blog! Here you'll find a collection of posts exploring topics from
   <img src="../images/jjk-thumb.png" alt="Job Opportunities Thumbnail" style="width: 100%; max-width: 400px; height: auto;">
 </div>  
 
-###### [Jujutsu Kaisen and Shifting the Balance With Social Engineering](posts/socialengineeringjjk.md)
+###### [Jujutsu Kaisen and Shifting the Balance With Social Engineering](posts/jjk.md)
 *Sept 21, 2025*  
 
 Bridging anime storytelling and cyber security concepts by analysing how Kenjaku’s impersonation and manipulation mirror real-world social engineering attacks.
