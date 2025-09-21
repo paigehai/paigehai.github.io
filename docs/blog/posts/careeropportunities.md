@@ -38,4 +38,4 @@ Say yes to all kinds of opportunities, even when you’re not sure! If you think
 
 While gaining the technical know-how in your degree can seem like enough to land a job, there are many other things you should be doing to boost your chances of landing an internship or post-graduate position. As an IT student at Deakin University, you already have access to an amazing network, so make the most of it by connecting with staff and other students both in your units of study and outside, like in university club and other events. If you start small, and set goals for yourself by staying active in the IT industry, you will feel your confidence grow which will, in turn, lead to a more lasting impression on future employers.  
 
-Remember: your future in IT starts now, and your dream role is more accessible than you think.  
+Remember: your future in cyber security starts now, and your dream role is more accessible than you think.  
