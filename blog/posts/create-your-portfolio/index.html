@@ -179,7 +179,7 @@
 
 <p>After a close friend of mine had introduced me to GitHub pages through her own portfolio (shout out to you, <a href="https://briannalaird.com">Brianna</a>!), I quickly became hooked on the idea of creating my own portfolio from scratch! Taking note of my walkthrough in making my portfolio was both for my own reference, and so I am able to guide others on how to create their own portfolio's. What good is knowledge if you cannot share it!</p>
 <p>In this guide, I provide step-by-step instructions, including code snippets, that you can use to create your own GitHub Pages portfolio, and maintain it. This is the method I have found to be most convenient, however, I always encourage others to challenge my process (and let me know if you find something even better that I can implement!).</p>
-<p><em>Please note:</em> this guide has been created using MKDocs and their <em>Simple Blog</em> theme, so if you have chosen another, then this process may not work as effectively. </p>
+<p><em>Please note:</em> this guide has been created using MKDocs and their <em>Simple Blog</em> theme, so if you have chosen another, then this process may not work as effectively. Additionally, I am building this portfolio with Linux so commands might differ on Windows or MacOS.</p>
 <h3 id="step-1-create-your-github-repository">Step 1: Create Your GitHub Repository</h3>
 <p>To get started on my portfolio, I needed to create a GitHub repository. To ensure it works as expected, you must include <code>.github.io</code> in the repository name.<br />
 For mine, I chose: <code>paigehai.github.io</code>.  </p>
@@ -263,7 +263,13 @@ and serve the site locally.</p>
 <blockquote>
 <p>I found adding an <code>extra.css</code> file, and images folders really helped me manage my backend. It also helped me refine my markdown skills, as my brain has been in Python development mode over the first half of the year.</p>
 </blockquote>
-<h4 id="implement-a-deployment-script">Implement a Deployment Script</h4>
+<h3 id="step-4-deploying-the-correct-site">Step 4: Deploying the Correct Site</h3>
+<p>GitHub allows you to select different branches to be used as your main site. Once you have committed your changes to GitHub, double-check that GitHub is being built from the <code>gh-pages</code> branch in the <code>/(root)</code> folder. </p>
+<div style="text-align: center;">
+    <img src="../../posts/images/port10.png" alt="GitHub Portfolio" style="width: 100%; max-width: 600px; height: auto;"> 
+</div>
+
+<h4 id="step-4-implement-a-deployment-script-linux">Step 4: Implement a Deployment Script - Linux</h4>
 <p>When I was editing my website, I found that manually inputting commands became incredibly time-consuming. In addition, sometimes pages wouldn't update and elements I added weren't being reflected. This became a task as I really needed a reliable method to deploy the website without facing issues of backdated content. </p>
 <p>So, I created a simple script titled <code>deploy.sh</code> in the same directly as my portfolio, that you can implement if you created your site using MKDocs. This script allowed me to update my <code>master</code> branch and keep the content to the most recent version. It has saved me many hours of banging my head against my desk, that's for sure!</p>
 <pre class="highlight"><code class="language-angular2html">#!/bin/bash
@@ -281,15 +287,31 @@ git push origin master/main
 mkdocs gh-deploy --clean --force</code></pre>
 <p>To execute the script, ensure that you have execute permissions.
 <pre class="highlight"><code>chmod +x deploy.sh</code></pre></p>
-<p>To execute the script, you now simply need to execute:
-<pre class="highlight"><code>./deploy.sh</code></pre></p>
+<p>To execute the script, you now simply need to execute the following commands:
+<pre class="highlight"><code>source venv/bin/activate # Activates a virtual environment
+./deploy.sh # Deployment script</code></pre></p>
 <p>When you run the script, GitHub will ask you to log in using your username and password. When entering your password, ensure you have set up a <strong>Classic token</strong> in GitHub, and use this, otherwise if you have MFA (like myself), you will receive an error.</p>
-<h3 id="step-4-deploying-the-correct-site">Step 4: Deploying the Correct Site</h3>
-<p>GitHub allows you to select different branches to be used as your main site. Once you have committed your changes to GitHub, double-check that GitHub is being built from the <code>gh-pages</code> branch in the <code>/(root)</code> folder. </p>
-<div style="text-align: center;">
-    <img src="../../posts/images/port10.png" alt="GitHub Portfolio" style="width: 100%; max-width: 600px; height: auto;"> 
-</div>
+<blockquote>
+<p>You may not need to activate a virtual environment, however, I have had issues without using venv so using the virtual environment has given me the most success.</p>
+</blockquote>
+<h4 id="implement-a-deployment-script-windows">Implement a Deployment Script - Windows</h4>
+<p>Update! I have migrated from both Linux to Windows and back again, so I decided to add this aside for those who want to create the deployment script on Windows. This file is denoted <code>deploy.ps1</code>. </p>
+<pre class="highlight"><code class="language-angular2html"># Stage all changes
+git add .
 
+# Commit with a message
+git commit -m "Update docs"
+
+# Push to master
+git push origin master
+
+# Build and deploy to GitHub Pages
+mkdocs gh-deploy --clean --force</code></pre>
+<p>Running the script, you may be asked for your username and password. Add your <strong>Classic token</strong> from GitHub, and you'll be good to go. </p>
+<p>Before executing the script, I like running the following commands to set up a virtual environment (similar to Linux), as I find that this is the most reliable. Run the commands:
+<pre class="highlight"><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass # Temporarily runs local scripts
+.\venv\Scripts\Activate.ps1 # Activate virtual environment
+./deploy.ps1 # Deployment script</code></pre></p>
 <p>Once you have completed all of the above, congratulations! 🎉 You are now able to start maintaining your own portfolio website and update it as you see fit! (I will literally be using this method to upload this very blog post!).</p></p>
     </article>
 </section>
